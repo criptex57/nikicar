@@ -1,0 +1,2504 @@
+# Translation of Plugins - WP Statistics - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - WP Statistics - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-09-07 09:47:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.9\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - WP Statistics - Stable (latest release)\n"
+
+#: includes/admin/templates/pages/page-chart.php:112
+#: includes/class-wp-statistics-meta-box.php:150
+msgid "Top Referring"
+msgstr "Кращі джерела переходу"
+
+#: includes/admin/templates/settings/notifications.php:117
+msgid "To set your own schedule, check out <a href=\"%s\" target=\"_blank\">this doc</a>."
+msgstr "Щоб встановити власний розклад, перегляньте <a href=\"%s\" target=\"_blank\">цей документ </a>."
+
+#: includes/admin/templates/pages/pages.php:8
+#: includes/class-wp-statistics-meta-box.php:270
+msgid "Top 5 Trending Pages"
+msgstr "5 найпопулярніших сторінок"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-top-pages-chart.php:68
+msgid "Top 5 Trending Pages from %s to %s"
+msgstr "5 найпопулярніших сторінок від %s до %s"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-top-pages-chart.php:66
+msgid "Top 5 Trending Pages in the last %s days"
+msgstr "5 найпопулярніших сторінок за останні %s днів"
+
+#: includes/admin/templates/layout/tabs-settings.php:8
+msgid "Roles"
+msgstr "Ролі"
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:420
+#: includes/api/v2/class-wp-statistics-api-meta-box.php:71
+msgid "The name of MetaBox is invalid on request."
+msgstr "Недійсна назва метабоксу у запиті."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:114
+msgid "The %1$s table does not support optimize, doing recreate + analyze instead."
+msgstr "Таблиця %1$s не підтримує оптимізацію, замість цього виконується відновлення + аналіз."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:111
+msgid "Successfully optimized the %s table."
+msgstr "Оптимізація таблиці %s пройшла успішно."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:106
+msgid "The %s table is already optimized."
+msgstr "Таблиця %s вже оптимізована."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:97
+msgid "Failed to repair the %1$s table. Error: %2$s"
+msgstr "Не вдалось відновити таблицю %1$s. Виникла помилка: %2$s"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:95
+msgid "Successfully repaired the %s table."
+msgstr "Успішно відновлено таблицю %s."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:90
+msgid "The %1$s table is not okay. It is reporting the following error: %2$s. WordPress will attempt to repair this table&hellip;"
+msgstr "Таблиця %1$s не в порядку. Вона повідомляє таку помилку: %2$s. WordPress спробує виправити цю таблицю&hellip;"
+
+#. translators: %s: Table name.
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:87
+msgid "The %s table is okay."
+msgstr "З таблицею %s все гаразд."
+
+#: includes/admin/templates/optimization/database.php:49
+msgid "Please select the table you would like to optimize and repair"
+msgstr "Виберіть таблицю, яку потрібно оптимізувати та відремонтувати"
+
+#: includes/admin/templates/optimization/database.php:67
+msgid "Please select database table"
+msgstr "Виберіть таблицю бази даних"
+
+#: includes/admin/templates/optimization/database.php:37
+msgid "Optimize Table:"
+msgstr "Оптимізувати таблицю:"
+
+#: includes/admin/templates/optimization/database.php:32
+msgid "Repair and Optimization Database Tables"
+msgstr "Ремонт та оптимізація таблиць баз даних"
+
+#: includes/admin/class-wp-statistics-admin-notices.php:78
+msgid "Here is an error associated with Connecting WP REST API"
+msgstr "Помилка, пов'язана з підключенням WordPress Rest API"
+
+#: includes/admin/templates/optimization/database.php:53
+msgid "Run Now!"
+msgstr "Запустити зараз!"
+
+#: includes/admin/templates/settings/exclusions.php:147
+msgid "Add the country codes (one per line, two letters each) to exclude them from statistics collection."
+msgstr "Додайте коди країн (по одному на рядок, по дві літери кожен), щоб виключити їх зі збору статистики."
+
+#: includes/admin/meta-box/wp-statistics-meta-box-browsers.php:143
+#: includes/admin/meta-box/wp-statistics-meta-box-devices.php:83
+#: includes/admin/meta-box/wp-statistics-meta-box-models.php:83
+#: includes/admin/meta-box/wp-statistics-meta-box-platforms.php:83
+msgid "%s Statistics from %s to %s"
+msgstr "%s Статистика від %s до %s"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-browsers.php:141
+#: includes/admin/meta-box/wp-statistics-meta-box-devices.php:81
+#: includes/admin/meta-box/wp-statistics-meta-box-models.php:81
+#: includes/admin/meta-box/wp-statistics-meta-box-platforms.php:81
+msgid "%s Statistics in the last %s days"
+msgstr "%s Статистика за останні %s днів"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-search.php:46
+msgid "Search engine referrals from %s to %s"
+msgstr "Переходи з пошукових систем від %s до %s"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-pages-chart.php:70
+msgid "Hits in the in the last %s days"
+msgstr "Звернення за останні %s днів"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-hits.php:81
+#: includes/admin/meta-box/wp-statistics-meta-box-pages-chart.php:72
+msgid "Hits from %s to %s"
+msgstr "Звернення від %s до %s"
+
+#: includes/admin/templates/settings/maintenance.php:65
+msgid "Purge Visitors More Than:"
+msgstr "Очистити відвідувачів більше, ніж:"
+
+#: includes/admin/templates/settings/maintenance.php:37
+msgid "The minimum value is 30 days."
+msgstr "Мінімальне значення - 30 днів."
+
+#: includes/admin/templates/settings/privacy.php:30
+msgid "Also, it disables the \"Store entire user agent string\" setting."
+msgstr "Крім того, він вимикає параметр \"Зберегти весь рядок користувача\"."
+
+#: includes/admin/templates/settings/privacy.php:30
+msgid "By enabling this option, you cannot recover the IP addresses in the future to find out location information, and IP addresses will not be stored in the database but instead used a unique hash."
+msgstr "Увімкнувши цю опцію, ви не зможете в майбутньому відновити IP-адреси, щоб дізнатися інформацію про місцеперебування, а IP-адреси не будуть зберігатися в базі даних, а замість цього буде використано унікальний хеш."
+
+#: includes/admin/templates/settings/notifications.php:191
+msgid "Enable this option to show all notices and suggestions from WP Statistics in the admin."
+msgstr "Увімкніть цю опцію, щоб відображати всі повідомлення та пропозиції від WP-Statistics в адміністраторі."
+
+#: includes/admin/templates/settings/notifications.php:77
+msgid "Enable this option to receive stats report via email"
+msgstr "Увімкніть цю опцію, щоб отримувати статистичні звіти електронною поштою"
+
+#: includes/admin/templates/settings/notifications.php:56
+msgid "Enable it to send a report whenever the pruning of the database is run."
+msgstr "Увімкніть його для надсилання звіту щоразу, коли виконується скорочення бази даних."
+
+#: includes/admin/templates/settings/notifications.php:44
+msgid "Enable it to send a report whenever the GeoIP database is updated."
+msgstr "Увімкніть його для надсилання звіту щоразу, коли оновлюється база даних GeoIP."
+
+#: includes/admin/templates/settings/notifications.php:23
+msgid "Add email addresses you want to receive reports and separate them with a comma."
+msgstr "Додайте адреси електронної пошти, на які хочете отримувати звіти, розділивши їх комами."
+
+#: includes/admin/meta-box/wp-statistics-meta-box-exclusions.php:63
+msgid "Exclusions from %s to %s"
+msgstr "Виключення з %s до %s"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-exclusions.php:61
+msgid "Exclusions in the last %s days"
+msgstr "Виключення за останні %s днів"
+
+#: includes/admin/templates/settings/general.php:291
+msgid "WP Statistics displays an alert if any of the core features are disabled. To hide these notices, enable this option."
+msgstr "WP-Statistics показує попередження, якщо будь-яка з основних функцій вимкнена. Щоб приховати ці повідомлення, увімкніть цю опцію."
+
+#: includes/admin/templates/settings/general.php:279
+msgid "Select Yes to show stats in the admin menu bar"
+msgstr "Виберіть Так, щоб відобразити статистику на панелі меню адміністратора"
+
+#: includes/admin/templates/settings/general.php:156
+msgid "Enable this option to remove everything after the “?” in a URL"
+msgstr "Увімкніть цю опцію, щоб видалити все після символу \"?\" в URL-адресі"
+
+#: includes/admin/templates/settings/general.php:129
+msgid "Enable this option to count the Pages visits"
+msgstr "Увімкніть цю опцію для підрахунку відвідувань Сторінок"
+
+#: includes/admin/templates/settings/general.php:109
+msgid "Enable this option to show the list of user visits, link in the WordPress admin user list page."
+msgstr "Увімкніть цю опцію, щоб відобразити список відвідувань користувачів, посилання на сторінці списку користувачів адміністратора WordPress."
+
+#: includes/admin/templates/settings/general.php:104
+msgid "User Visits Column"
+msgstr "Стовпець відвідування користувача"
+
+#: includes/admin/templates/settings/general.php:98
+msgid "Enable this option to receive a report of each user’s visits to the pages"
+msgstr "Увімкніть цю опцію, щоб отримувати звіт про відвідування сторінок кожним користувачем"
+
+#: includes/admin/templates/settings/general.php:67
+msgid "Enable this option to show the number of Page Views"
+msgstr "Увімкніть цю опцію, щоб показати кількість переглядів сторінок"
+
+#: includes/admin/templates/settings/general.php:46
+msgid "Enable this option to ignore the exclusion settings and record all online users (including self referrals and robots). Should only be used for troubleshooting."
+msgstr "Увімкніть цю опцію, щоб ігнорувати налаштування виключення та записувати всіх користувачів Інтернету (включаючи авторефералів та роботів). Її слід використовувати лише для усунення неполадок."
+
+#: includes/admin/templates/settings/general.php:22
+msgid "Enable this feature to show online users"
+msgstr "Увімкніть цю функцію для показу користувачів у мережі"
+
+#: includes/admin/templates/settings/access-level.php:73
+msgid "If you need a more robust solution to delegate access, you might want to look at %s Capability Manager Enhanced %s in the WordPress plugin directory."
+msgstr "Якщо вам потрібно більш надійне рішення для делегування доступу, ви можете розглянути %s Capability Manager Enhanced %s у репозиторії плагінів WordPress."
+
+#: includes/admin/templates/settings/access-level.php:9
+msgid "User Roles"
+msgstr "Ролі користувачів"
+
+#: includes/admin/templates/settings/overview-display.php:43
+msgid "This option will disable the map display."
+msgstr "Ця опція вимикає відображення карти."
+
+#: includes/admin/templates/settings/overview-display.php:26
+msgid "This option will disable dashboard widgets."
+msgstr "Ця опція вимикає віджети майстерні."
+
+#: includes/admin/templates/settings/visitor-ip.php:144
+msgid "e.g. <code>HTTP_CF_CONNECTING_IP</code> in CloudFlare."
+msgstr "наприклад <code>HTTP_CF_CONNECTING_IP</code> у CloudFlare."
+
+#: includes/admin/templates/settings/visitor-ip.php:143
+msgid "Fill out this field if your server uses the custom key in <code>$_SERVER</code> for getting the IP."
+msgstr "Заповніть це поле, якщо ваш сервер використовує користувацький ключ у <code>$ _SERVER</code> для отримання IP."
+
+#: includes/admin/templates/settings/externals.php:230
+msgid "Enable this option to download The Matomo Referrer Spam Blacklist database and detect referrer spam."
+msgstr "Увімкніть цей параметр, щоб завантажити базу даних Matomo Referrer Spam Blacklist і виявити джерело переходу спамерів."
+
+#: includes/admin/templates/settings/externals.php:115
+msgid "Enable this option to update any missing GeoIP data after downloading a new database."
+msgstr "Увімкніть цю опцію, щоб оновити будь-які відсутні дані GeoIP після завантаження нової бази даних."
+
+#: includes/admin/templates/settings/externals.php:64
+msgid "Enable this option to see visitors'city name"
+msgstr "Увімкніть цю опцію, щоб побачити назву міста відвідувачів"
+
+#: includes/admin/templates/settings/externals.php:48
+msgid "Enable this option to get more information and location (country) from a visitor."
+msgstr "Увімкніть цю опцію, щоб отримати додаткову інформацію та місцезнаходження (країну) відвідувача."
+
+#: includes/admin/templates/settings/exclusions.php:208
+msgid "Excluded URLs:"
+msgstr "Виключені URL-адреси:"
+
+#: includes/admin/templates/settings/overview-display.php:37
+msgid "Map Display:"
+msgstr "Відображення мапи:"
+
+#: includes/admin/templates/settings/overview-display.php:20
+msgid "Dashboard Widgets:"
+msgstr "Віджети в майстерні:"
+
+#: includes/admin/templates/settings/exclusions.php:169
+msgid "Excluded Hosts:"
+msgstr "Виключені хости:"
+
+#: includes/admin/templates/settings/exclusions.php:152
+msgid "Included Countries:"
+msgstr "Включені країни:"
+
+#: includes/admin/templates/settings/exclusions.php:144
+msgid "Excluded Countries:"
+msgstr "Виключені країни:"
+
+#: includes/admin/templates/settings/exclusions.php:111
+msgid "Enable this option for identifying robots by the Honey Pot page."
+msgstr "Увімкніть цю опцію для ідентифікації роботів на сторінці Honey Pot."
+
+#: includes/admin/templates/settings/exclusions.php:100
+msgid "Add"
+msgstr "Додати"
+
+#: includes/admin/templates/settings/exclusions.php:12
+msgid "It generates a lot of data, not only actual user visits but also shows the total number of your site’s hits."
+msgstr "Це генерує багато даних окрім фактичних відвідувань користувачів, але також показує загальну кількість звернень вашого сайту."
+
+#: includes/admin/templates/pages/category.php:52
+msgid "Chart Visits:"
+msgstr "Діаграма відвідувань:"
+
+#: includes/admin/templates/pages/author.php:52
+#: includes/admin/templates/pages/tag.php:52
+msgid "Visits Total:"
+msgstr "Всього відвідувань:"
+
+#: includes/admin/templates/pages/author.php:57
+#: includes/admin/templates/pages/category.php:57
+#: includes/admin/templates/pages/tag.php:57
+msgid "All Time Visits:"
+msgstr "Відвідування за весь час:"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:411
+msgid "Show a different month"
+msgstr "Показати інший місяць"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:323
+#: includes/admin/templates/pages/online.php:23
+#: includes/admin/templates/pages/top-visitors.php:29
+#: includes/admin/templates/pages/visitors.php:42
+msgid "User"
+msgstr "Користувач"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:322
+msgid "Please Wait ..."
+msgstr "Будь ласка, зачекайте..."
+
+#: includes/admin/class-wp-statistics-admin-assets.php:321
+msgid "Please enter a valid ip."
+msgstr "Будь ласка, введіть дійсний IP."
+
+#: includes/admin/class-wp-statistics-admin-assets.php:317
+msgid "Version List"
+msgstr "Перелік версій"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:318
+msgid "Filter"
+msgstr "Фільтр"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:407
+msgid "Done"
+msgstr "Готово"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:320
+msgid "Please select the time efficiency."
+msgstr "Будь ласка, оберіть часову ефективність."
+
+#: includes/admin/templates/pages/top-visitors.php:14
+msgid "No information is available for this day."
+msgstr "Немає інформації за цей день."
+
+#: includes/admin/class-wp-statistics-admin-template.php:104
+#: includes/admin/pages/class-wp-statistics-admin-page-authors.php:25
+#: includes/admin/pages/class-wp-statistics-admin-page-category.php:25
+#: includes/admin/pages/class-wp-statistics-admin-page-tags.php:25
+#: includes/admin/pages/class-wp-statistics-admin-page-taxonomies.php:48
+msgid "Request is not valid."
+msgstr "Запит недійсний."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-pages.php:202
+msgid "Page Statistics"
+msgstr "Статистика сторінок"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-pages.php:54
+msgid "Your request is not valid."
+msgstr "Ваш запит не є дійсним."
+
+#: includes/admin/class-wp-statistics-admin-template.php:109
+#: includes/admin/pages/class-wp-statistics-admin-page-top-visitors-today.php:18
+msgid "Time request is not valid."
+msgstr "Запит часу не є дійсним."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:144
+msgid "All settings reset."
+msgstr "Скидання всіх налаштувань."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:139
+msgid "Saved Settings."
+msgstr "Збережені налаштування."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:107
+msgid "Updated Referrer Spam Blacklist."
+msgstr "Оновлений чорний список джерел переходу спамерів."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:105
+msgid "Error Updating Referrer Spam Blacklist."
+msgstr "Помилка оновлення чорного списку джерел переходу спамерів."
+
+#: includes/class-wp-statistics.php:296
+msgid "</strong> or greater."
+msgstr "</strong> чи більше."
+
+#: includes/class-wp-statistics.php:295
+msgid "Your installed PHP Version is: "
+msgstr "Встановлена ​​версія PHP:"
+
+#: includes/class-wp-statistics.php:81
+msgid "Cloning is forbidden."
+msgstr "Клонування заборонено."
+
+#: includes/class-wp-statistics-geoip.php:293
+msgid "Error to get %s from %s"
+msgstr "Помилка отримання %s від %s"
+
+#: includes/class-wp-statistics-meta-box.php:275
+msgid "Pages Hits"
+msgstr "Запити сторінок"
+
+#: includes/class-wp-statistics-helper.php:785
+msgid "Category"
+msgstr "Категорія"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:314
+#: includes/admin/templates/pages/pages.php:36
+#: includes/admin/templates/pages/refer.url.php:27
+#: includes/admin/templates/pages/top.refer.php:15
+#: includes/admin/templates/pages/visitors.php:21
+#: includes/admin/templates/pages/words.php:21
+msgid "No data to display"
+msgstr "Немає даних для відображення"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:316
+msgid "Percentage"
+msgstr "Відсоток"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:310
+msgid "Custom"
+msgstr "Довільний"
+
+#: includes/class-wp-statistics-exclusion.php:17
+msgid "Ajax"
+msgstr "Ajax"
+
+#: includes/class-wp-statistics-exclusion.php:28
+msgid "404"
+msgstr "404"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-visitors.php:203
+msgid "Filters"
+msgstr "Фільтри"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:312
+msgid "from"
+msgstr "від"
+
+#: includes/admin/templates/settings/visitor-ip.php:61
+msgid "Please check your internet connection and try again."
+msgstr "Перевірте підключення до Інтернету та повторіть спробу."
+
+#: includes/admin/templates/settings/visitor-ip.php:19
+msgid "Value"
+msgstr "Значення"
+
+#: includes/admin/templates/settings/visitor-ip.php:18
+msgid "$_SERVER"
+msgstr "$_SERVER"
+
+#: includes/admin/templates/optimization/resources.php:292
+msgid "Server Info"
+msgstr "Інформація про сервер"
+
+#: includes/class-wp-statistics-install.php:584
+msgid "Please don't close the browser window until the database operation was completed."
+msgstr "Будь ласка, не закривайте вікно браузера до завершення операції з базою даних."
+
+#: includes/class-wp-statistics-install.php:573
+msgid "Error occurred during operation. Please refresh the page."
+msgstr "Під час роботи сталася помилка. Оновіть сторінку."
+
+#: includes/class-wp-statistics-install.php:535
+msgid "Database upgrade operation completed!"
+msgstr "Операцію оновлення бази даних завершено!"
+
+#: includes/class-wp-statistics-install.php:511
+msgid "Upgrade Database"
+msgstr "Оновити базу даних"
+
+#: includes/class-wp-statistics-install.php:508
+msgid "WP Statistics database requires upgrade."
+msgstr "База даних WP-Statistics потребує оновлення."
+
+#: includes/class-wp-statistics-pages.php:387
+msgid "Post Archive"
+msgstr "Архів записів"
+
+#: includes/class-wp-statistics-pages.php:374
+msgid "404 not found"
+msgstr "404 не знайдено"
+
+#: includes/class-wp-statistics-pages.php:371
+msgid "Search Page"
+msgstr "Сторінка пошуку"
+
+#: includes/class-wp-statistics-pages.php:352
+msgid "Home Page"
+msgstr "Домашня сторінка"
+
+#: includes/class-wp-statistics-user-agent.php:64
+msgid "Chrome"
+msgstr "Chrome"
+
+#: includes/class-wp-statistics-user-agent.php:65
+msgid "Firefox"
+msgstr "Firefox"
+
+#: includes/class-wp-statistics-user-agent.php:66
+msgid "Internet Explorer"
+msgstr "Internet Explorer"
+
+#: includes/class-wp-statistics-user-agent.php:67
+msgid "Edge"
+msgstr "Edge"
+
+#: includes/admin/class-wp-statistics-admin-template.php:181
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/admin/class-wp-statistics-admin-template.php:182
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/admin/templates/pages/top.refer.php:21
+msgid "Site Url"
+msgstr "URL сайту"
+
+#: includes/admin/templates/pages/top.refer.php:22
+msgid "Site Title"
+msgstr "Заголовок сайту"
+
+#: includes/admin/templates/pages/top.refer.php:20
+msgid "Rating"
+msgstr "Оцінка"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-referring.php:48
+#: includes/admin/templates/pages/top.refer.php:23
+msgid "Server IP"
+msgstr "IP серверу"
+
+#: includes/class-wp-statistics-user-agent.php:69
+msgid "Safari"
+msgstr "Safari"
+
+#: includes/class-wp-statistics-user-agent.php:68
+msgid "Opera"
+msgstr "Opera"
+
+#: includes/admin/templates/settings/general.php:250
+msgid "To register WP Statistics REST API endpoint ( %s ) , go to the <a href=\"%s\">Permalink page</a> and update the permalink by pressing Save Changes and then clear the cache."
+msgstr "Для реєстрації кінцевої точки WP-Statistics REST API ( %s ), перейдіть на <a href=\"%s\">сторінку постійного посилання</a> та оновіть постійне посилання, натиснувши Зберегти зміни."
+
+#: includes/admin/class-wp-statistics-admin-assets.php:283
+#: includes/admin/templates/pages/pages.php:45
+#: includes/admin/templates/pages/taxonomies.php:122
+msgid "Title"
+msgstr "Заголовок"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:282
+#: includes/admin/templates/pages/online.php:46
+#: includes/admin/templates/pages/pages.php:44
+#: includes/admin/templates/pages/taxonomies.php:121
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:65
+msgid "ID"
+msgstr "ID"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:284
+#: includes/admin/templates/pages/refer.url.php:31
+msgid "Link"
+msgstr "Посилання"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:276
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:52
+msgid "Time"
+msgstr "Час"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:63
+msgid "Format"
+msgstr "Формат"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:288
+#: includes/admin/templates/pages/online.php:17
+#: includes/admin/templates/pages/top-visitors.php:24
+#: includes/admin/templates/pages/visitors.php:31
+#: includes/admin/templates/pages/words.php:32
+msgid "City"
+msgstr "Місто"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:57
+msgid "Month"
+msgstr "Місяць"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:58
+msgid "Year"
+msgstr "Рік"
+
+#: includes/admin/class-wp-statistics-admin-template.php:274
+#: includes/class-wp-statistics-geoip.php:503
+#: includes/class-wp-statistics-user-agent.php:84
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:56
+msgid "Week"
+msgstr "Тиждень"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:290
+#: includes/admin/templates/pages/online.php:22
+#: includes/admin/templates/pages/top-visitors.php:30
+#: includes/admin/templates/pages/visitors.php:50
+#: includes/admin/templates/pages/words.php:36
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:50
+#: includes/class-wp-statistics-shortcode.php:209
+msgid "Referrer"
+msgstr "Джерело переходу"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:286
+#: includes/admin/templates/pages/words.php:26
+msgid "Word"
+msgstr "Слово"
+
+#: includes/admin/templates/settings/general.php:124
+msgid "Pages:"
+msgstr "Сторінки:"
+
+#: includes/admin/templates/settings/notifications.php:38
+msgid "GeoIP:"
+msgstr "GeoIP:"
+
+#: includes/admin/templates/settings/exclusions.php:147
+#: includes/admin/templates/settings/exclusions.php:155
+msgid "Use \"000\" (three zeros) to exclude unknown countries."
+msgstr "Використовуйте \"000\" (три нулі), щоб виключити невідомі країни."
+
+#: includes/admin/templates/settings/exclusions.php:12
+msgid "This option will record all the excluded hits in a separate table with the reasons for excluding (but no other information)."
+msgstr "Ця опція записує всі виключені звернення в окрему таблицю з причинами виключення (але жодної іншої інформації)."
+
+#: includes/admin/templates/optimization/purging.php:320
+msgid "Delete IP:"
+msgstr "Видалити IP:"
+
+#: includes/admin/templates/settings/privacy.php:5
+msgid "Privacy and Data Protection"
+msgstr "Конфіденційність та захист даних"
+
+#: includes/admin/templates/layout/tabs-settings.php:5
+msgid "Privacy"
+msgstr "Приватність"
+
+#: includes/admin/templates/settings/privacy.php:42
+msgid "Only enable it for debugging. If the IP hashes are enabled, this option will be disabled automatically."
+msgstr "Включено лише для налагодження. (Якщо ввімкнено хеш IP, цей параметр автоматично вимикається."
+
+#: includes/admin/templates/layout/select.php:6
+msgid "Select Page"
+msgstr "Виберіть сторінку"
+
+#: includes/admin/templates/settings/general.php:223
+msgid "Before Content"
+msgstr "Перед вмістом"
+
+#: includes/admin/templates/settings/general.php:224
+msgid "After Content"
+msgstr "Після вмісту"
+
+#. Author URI of the plugin
+msgid "https://veronalabs.com/"
+msgstr "https://veronalabs.com/"
+
+#. Author of the plugin
+msgid "VeronaLabs"
+msgstr "VeronaLabs"
+
+#: includes/admin/templates/postbox.php:4
+msgid "Subscribe to Newsletter"
+msgstr "Підписка на розсилку"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-platforms.php:81
+#: includes/admin/meta-box/wp-statistics-meta-box-platforms.php:83
+#: includes/class-wp-statistics-menus.php:249
+msgid "Platforms"
+msgstr "Платформи"
+
+#: includes/admin/templates/postbox.php:12
+msgid "Subscribe"
+msgstr "Підписуватися"
+
+#: includes/admin/templates/settings/exclusions.php:94
+msgid "You can add a list of IP addresses and subnet masks (one per line) to exclude from the statistics collection."
+msgstr "Ви можете додати список IP-адрес та масок підмереж (по одному на рядок), щоб виключити їх зі збору статистики."
+
+#: includes/class-wp-statistics-menus.php:235
+msgid "Authors"
+msgstr "Автори"
+
+#: includes/admin/templates/meta-box/about.php:21
+#: includes/admin/templates/settings/about.php:117
+msgid "Documentation"
+msgstr "Документація"
+
+#: includes/admin/templates/add-ons.php:32
+#: includes/admin/templates/settings/general.php:61
+#: includes/admin/templates/settings/general.php:82
+#: includes/admin/templates/settings/general.php:241
+msgid "Status:"
+msgstr "Статус:"
+
+#: src/Service/Admin/AddOnDecorator.php:137
+msgid "Inactive"
+msgstr "Не активно"
+
+#: includes/admin/templates/layout/tabs-settings.php:12
+#: includes/admin/templates/settings/reset.php:15
+msgid "Reset"
+msgstr "Скинути"
+
+#: includes/class-wp-statistics-helper.php:785
+msgid "Tags"
+msgstr "Позначки"
+
+#: includes/admin/templates/meta-box/about.php:26
+#: includes/admin/templates/plugins.php:4
+#: includes/class-wp-statistics-menus.php:284
+#: includes/class-wp-statistics-menus.php:285
+msgid "Add-Ons"
+msgstr "Додатки"
+
+#: includes/admin/templates/add-ons.php:31
+msgid "Version:"
+msgstr "Версія:"
+
+#: includes/class-wp-statistics-widget.php:76
+#: includes/class-wp-statistics-widget.php:284
+msgid "Last 7 Days Visits"
+msgstr "Відвідування за останні 7 днів"
+
+#: includes/class-wp-statistics-widget.php:83
+#: includes/class-wp-statistics-widget.php:288
+msgid "Last 30 Days Visits"
+msgstr "Відвідування за останні 30 днів"
+
+#: includes/class-wp-statistics-widget.php:90
+#: includes/class-wp-statistics-widget.php:292
+msgid "Last 365 Days Visits"
+msgstr "Відвідування за останні 365 днів"
+
+#: includes/admin/templates/layout/date.range.php:15
+msgid "Select"
+msgstr "Обрати"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:259
+msgid "Reload"
+msgstr "Перезавантажити"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:258
+msgid "More Details"
+msgstr "Більше деталей"
+
+#: includes/class-wp-statistics-user-agent.php:39
+#: includes/class-wp-statistics-user-agent.php:153
+msgctxt "Browser"
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-platforms.php:52
+#: includes/class-wp-statistics-user-agent.php:40
+#: includes/class-wp-statistics-user-agent.php:123
+msgctxt "Platform"
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/class-wp-statistics-user-agent.php:35
+#: includes/class-wp-statistics-user-agent.php:158
+msgctxt "Version"
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/class-wp-statistics-search-engine.php:151
+msgctxt "Search Engine"
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/defines/country-codes.php:6
+msgctxt "Country"
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:315
+#: includes/admin/templates/pages/author.php:36
+#: includes/admin/templates/pages/author.php:85
+#: includes/admin/templates/pages/category.php:36
+#: includes/admin/templates/pages/category.php:85
+#: includes/admin/templates/pages/tag.php:36
+#: includes/admin/templates/pages/tag.php:85
+#: includes/admin/templates/pages/taxonomies.php:36
+msgid "Count"
+msgstr "Кількість"
+
+#: includes/admin/templates/pages/author.php:8
+#: includes/admin/templates/pages/author.php:27
+#: includes/admin/templates/pages/author.php:76
+#: includes/admin/templates/pages/category.php:8
+#: includes/admin/templates/pages/category.php:27
+#: includes/admin/templates/pages/category.php:76
+#: includes/admin/templates/pages/pages.php:8
+#: includes/admin/templates/pages/pages.php:27
+#: includes/admin/templates/pages/refer.url.php:21
+#: includes/admin/templates/pages/tag.php:7
+#: includes/admin/templates/pages/tag.php:26
+#: includes/admin/templates/pages/tag.php:75
+#: includes/admin/templates/pages/taxonomies.php:8
+#: includes/admin/templates/pages/taxonomies.php:27
+#: includes/admin/templates/pages/taxonomies.php:88
+msgid "Toggle panel: %s"
+msgstr "Перемкнути панель: %s"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-category.php:51
+msgid "Select Category"
+msgstr "Обрати категорію"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-tags.php:52
+msgid "Select Tag"
+msgstr "Виберіть позначку"
+
+#: includes/admin/class-wp-statistics-admin-template.php:188
+msgid "Page %1$s of %2$s"
+msgstr "Сторінка %1$s з %2$s"
+
+#: includes/admin/class-wp-statistics-admin-network.php:61
+#: includes/class-wp-statistics-menus.php:179
+msgid "Online"
+msgstr "Онлайн"
+
+#: includes/admin/class-wp-statistics-admin-network.php:62
+#: includes/class-wp-statistics-menus.php:193
+msgid "Referrers"
+msgstr "Рефери"
+
+#: includes/admin/class-wp-statistics-admin-network.php:63
+#: includes/class-wp-statistics-menus.php:200
+msgid "Search Words"
+msgstr "Пошукові слова"
+
+#: includes/admin/class-wp-statistics-admin-network.php:69
+#: includes/admin/pages/class-wp-statistics-admin-page-top-visitors-today.php:33
+#: includes/class-wp-statistics-menus.php:256
+msgid "Top Visitors Today"
+msgstr "Топ відвідувачі за сьогодні"
+
+#: includes/admin/class-wp-statistics-admin-network.php:71
+#: includes/class-wp-statistics-menus.php:270
+msgid "Optimization"
+msgstr "Оптимізація"
+
+#: includes/admin/class-wp-statistics-admin-network.php:50
+msgid "Site"
+msgstr "Сайт"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:36
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:16
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Ви не маєте достатніх прав для доступу до цієї сторінки."
+
+#: includes/class-wp-statistics-geoip.php:327
+msgid "Error downloading GeoIP database from: %s - %s"
+msgstr "Помилка під час завантаження GeoIP бази даних із: %s - %s"
+
+#: includes/class-wp-statistics-geoip.php:342
+msgid "Error could not open downloaded GeoIP database for reading: %s"
+msgstr "Помилка не вдалося відкрити завантажену GeoIP базу даних для читання: %s"
+
+#: includes/class-wp-statistics-geoip.php:351
+msgid "Error could not open destination GeoIP database for writing %s"
+msgstr "Помилка не вдалося відкрити шлях бази даних GeoIP для написання %s"
+
+#: includes/class-wp-statistics-geoip.php:366
+msgid "GeoIP Database updated successfully!"
+msgstr "GeoIP база даних успішно оновлена!"
+
+#: includes/class-wp-statistics-geoip.php:389
+#: includes/class-wp-statistics-geoip.php:392
+msgid "GeoIP update on"
+msgstr "GeoIP оновлена на"
+
+#: includes/admin/class-wp-statistics-admin-network.php:51
+msgid "Options"
+msgstr "Параметри"
+
+#: includes/admin/class-wp-statistics-admin-network.php:29
+#: includes/admin/class-wp-statistics-admin-network.php:59
+#: includes/class-wp-statistics-menus.php:166
+msgid "Overview"
+msgstr "Огляд"
+
+#. Plugin URI of the plugin
+msgid "https://wp-statistics.com/"
+msgstr "https://wp-statistics.com/"
+
+#: includes/class-wp-statistics-geoip.php:306
+msgid "Error creating GeoIP database directory, make sure your web server has permissions to create directories in: %s"
+msgstr "Помилка створення каталогу бази даних GeoIP. Переконайтеся, що ваш веб-сервер має дозволи на створення каталогів у: %s"
+
+#: includes/class-wp-statistics-shortcode.php:246
+msgid "Post/Page ID"
+msgstr "ID повідомлення/сторінки для статистики на сторінці. "
+
+#: includes/class-wp-statistics-shortcode.php:216
+msgid "The time frame to get the statistic for, strtotime() (http://php.net/manual/en/datetime.formats.php) will be used to calculate it. Use \"total\" to get all recorded dates."
+msgstr "Строк отримання статистики, strtotime() (http://php.net/manual/en/datetime.formats.php) використовуватиметься для її розрахунку. Використовуйте \"total\", щоб отримати всі записані дати."
+
+#: includes/admin/class-wp-statistics-admin-notices.php:122
+msgid "visitor tracking"
+msgstr "відстеження відвідувачів"
+
+#: includes/admin/class-wp-statistics-admin-notices.php:126
+msgid ","
+msgstr ","
+
+#: includes/admin/class-wp-statistics-admin-notices.php:117
+msgid "hit tracking"
+msgstr "Відстеження переглядів"
+
+#: includes/admin/class-wp-statistics-admin-notices.php:112
+msgid "online user tracking"
+msgstr "Відстеження користувачів онлайн"
+
+#: includes/admin/templates/layout/tabs-settings.php:10
+msgid "Externals"
+msgstr "Зовнішні специфікації"
+
+#: includes/admin/templates/settings/exclusions.php:130
+msgid "Treat any visitor with corrupt browser info (missing IP address or empty user agent string) as a robot."
+msgstr "Вважати будь-якого відвідувача з пошкодженою інформацією браузера (без ІР адреси або пустим рядком про користувача) роботом."
+
+#: includes/admin/templates/settings/general.php:312
+msgid "If a search engine is identified as the referrer but it does not include the search query this option will substitute the page title in quotes preceded by \"~:\" as the search query to help identify what the user may have been searching for."
+msgstr "Якщо пошукова система визначена як реферер, але вона не включає пошуковий запит, цей варіант замінить заголовок сторінки в лапках, після \"~:\" як пошуковий запит, щоб допомогти визначити, що користувач міг шукати."
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:39
+#: includes/class-wp-statistics-shortcode.php:198
+msgid "Page Visits"
+msgstr "Відвідування сторінки"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:42
+#: includes/class-wp-statistics-shortcode.php:201
+msgid "Page Count"
+msgstr "Кількість сторінок"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:43
+#: includes/class-wp-statistics-shortcode.php:202
+msgid "Comment Count"
+msgstr "Кількість коментарів"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:44
+#: includes/class-wp-statistics-shortcode.php:203
+msgid "Spam Count"
+msgstr "Кількість спаму"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:45
+#: includes/class-wp-statistics-shortcode.php:204
+msgid "User Count"
+msgstr "Кількість користувачів"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:46
+#: includes/class-wp-statistics-shortcode.php:205
+#: includes/class-wp-statistics-widget.php:160
+#: includes/class-wp-statistics-widget.php:351
+msgid "Post Average"
+msgstr "середня кількість публікацій"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:47
+#: includes/class-wp-statistics-shortcode.php:206
+#: includes/class-wp-statistics-widget.php:167
+#: includes/class-wp-statistics-widget.php:355
+msgid "Comment Average"
+msgstr "середня кількість коментарів"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:48
+#: includes/class-wp-statistics-shortcode.php:207
+#: includes/class-wp-statistics-widget.php:174
+#: includes/class-wp-statistics-widget.php:359
+msgid "User Average"
+msgstr "Середня кількість користувачів"
+
+#: includes/class-wp-statistics-shortcode.php:223
+msgid "Search Provider"
+msgstr "Пошуковий провайдер"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:62
+#: includes/class-wp-statistics-shortcode.php:226
+msgid "The search provider to get statistics on."
+msgstr "Пошуковий провайдер для отримання статистики"
+
+#: includes/class-wp-statistics-shortcode.php:230
+msgid "Number Format"
+msgstr "Числовий формат"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:64
+msgid "The format to display numbers in: i18n, english, none."
+msgstr "Формат для відображення чисел в: i18n, англйська, нічого."
+
+#: includes/class-wp-statistics-shortcode.php:240
+msgid "English"
+msgstr "Англійська"
+
+#: includes/class-wp-statistics-shortcode.php:241
+msgid "International"
+msgstr "Міжнародна"
+
+#: includes/class-wp-statistics-shortcode.php:192
+msgid "Select the statistic you wish to display."
+msgstr "Вибрати статистику, яку хочете відображати."
+
+#: includes/class-wp-statistics-shortcode.php:189
+msgid "Statistic"
+msgstr "Статистика"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:41
+#: includes/class-wp-statistics-shortcode.php:200
+msgid "Post Count"
+msgstr "Кількість публікацій"
+
+#: includes/class-wp-statistics-shortcode.php:213
+msgid "Time Frame"
+msgstr "Інтервал часу"
+
+#: includes/admin/templates/settings/general.php:140
+msgid "Enable or disable this feature"
+msgstr "Включити або виключити функцію"
+
+#: includes/admin/class-wp-statistics-admin-network.php:65
+msgid "Pages"
+msgstr "Сторінки"
+
+#: includes/admin/templates/optimization/resources.php:86
+#: includes/admin/templates/optimization/resources.php:102
+#: includes/admin/templates/settings/general.php:277
+msgid "No"
+msgstr "Ні"
+
+#: includes/admin/templates/optimization/resources.php:84
+#: includes/admin/templates/optimization/resources.php:100
+#: includes/admin/templates/settings/general.php:276
+msgid "Yes"
+msgstr "Так"
+
+#: includes/admin/templates/settings/general.php:301
+#: includes/class-wp-statistics-menus.php:207
+msgid "Search Engines"
+msgstr "Пошуковики"
+
+#: includes/admin/templates/settings/general.php:337
+msgid "Disable %s from data collection and reporting."
+msgstr "Відключити%s з колекції даних і звітності."
+
+#: includes/admin/templates/settings/general.php:348
+msgid "Charts"
+msgstr "Графіки"
+
+#: includes/admin/templates/settings/general.php:358
+msgid "Add a total line to charts with multiple values, like the search engine referrals"
+msgstr "Додати загальний рядок в графік з декількома значеннями, як пошукові реферали"
+
+#: includes/admin/templates/settings/externals.php:102
+msgid "Download of the GeoIP database will be scheduled for 2 days after the first Tuesday of the month."
+msgstr "Завантаження бази даних GeoIP будуть заплановані протягом 2 днів після першого вівторка місяця."
+
+#: includes/admin/templates/settings/externals.php:103
+msgid "This option will also download the database if the local filesize is less than 1k (which usually means the stub that comes with the plugin is still in place)."
+msgstr "Ця опця також завантажить базу даних, якщо локальний розмір файлу менше, ніж 1k (це, як правило, означає, що заглушка, яка поставляється з плагіном, все ще перебуває на місці)."
+
+#: includes/admin/templates/settings/externals.php:135
+msgid "GeoIP collection is disabled due to the following reasons:"
+msgstr "Колекція GeoIP відключена через наступні причини:"
+
+#: includes/admin/templates/settings/externals.php:139
+msgid "GeoIP collection requires the cURL PHP extension and it is not loaded on your version of PHP!"
+msgstr "Колекції GeoIP потрібне розширення cURL PHP і вона не завантажується на вашій версії PHP!"
+
+#: includes/admin/templates/settings/maintenance.php:5
+msgid "This will permanently delete data from the database each day, are you sure you want to enable this option?"
+msgstr "Це буде видаляти дані з бази даних кожен день, ви впевнені, що ви хочете включити цю опцію?"
+
+#: includes/admin/templates/settings/notifications.php:10
+msgid "Common Report Options"
+msgstr "Загальні параметри звіту"
+
+#: includes/admin/templates/settings/notifications.php:33
+msgid "Update Reports"
+msgstr "Відновити звіти"
+
+#: includes/admin/templates/settings/notifications.php:66
+#: includes/class-wp-statistics-schedule.php:257
+msgid "Statistical reporting"
+msgstr "Статистична звітність"
+
+#: includes/admin/templates/settings/notifications.php:116
+msgid "Select how often to receive statistical report."
+msgstr "Виберіть, як часто отримувати статистичний звіт."
+
+#: includes/admin/templates/settings/notifications.php:131
+msgid "SMS"
+msgstr "SMS"
+
+#: includes/admin/templates/settings/notifications.php:135
+msgid "Select delivery method for statistical report."
+msgstr "Виберіть спосіб доставки для статистичного звіту."
+
+#: includes/admin/templates/settings/notifications.php:137
+msgid "Note: To send SMS text messages please install the %s plugin."
+msgstr "Примітка: Для відправки SMS текстового повідомлення, будь ласка, встановіть %s плагін."
+
+#: includes/admin/templates/settings/notifications.php:149
+msgid "Enter the contents of the report."
+msgstr "Введіть вміст звіту."
+
+#: includes/admin/templates/layout/tabs-settings.php:13
+msgid "About"
+msgstr "Про"
+
+#: includes/admin/templates/settings/overview-display.php:10
+msgid "The following items are global to all users."
+msgstr "Наступні пункти застосовуються для всіх користувачів."
+
+#: includes/admin/templates/layout/tabs-settings.php:6
+msgid "Notifications"
+msgstr "Сповіщення"
+
+#: includes/admin/templates/layout/tabs-settings.php:11
+msgid "Maintenance"
+msgstr "Обслуговування"
+
+#: includes/class-wp-statistics-schedule.php:131
+msgid "Once Every 2 Weeks"
+msgstr "Один раз кожні 2 тижні"
+
+#: includes/class-wp-statistics-schedule.php:135
+msgid "Once Every 4 Weeks"
+msgstr "Один раз на 4 тижні"
+
+#: includes/admin/class-wp-statistics-admin-network.php:26
+#: includes/class-wp-statistics-menus.php:159
+#: includes/class-wp-statistics-widget.php:15
+msgid "Statistics"
+msgstr "Статистика"
+
+#: includes/class-wp-statistics-widget.php:16
+msgid "Show site stats in sidebar."
+msgstr "Відображати статистику сайту у бічній панелі."
+
+#: includes/class-wp-statistics-widget.php:111
+#: includes/class-wp-statistics-widget.php:304
+msgid "Total Page Views"
+msgstr "Усього переглядів сторінки"
+
+#: includes/class-wp-statistics-widget.php:125
+#: includes/class-wp-statistics-widget.php:331
+msgid "Total Posts"
+msgstr "Всього публікацій"
+
+#: includes/class-wp-statistics-widget.php:132
+#: includes/class-wp-statistics-widget.php:335
+msgid "Total Pages"
+msgstr "Всього сторінок"
+
+#: includes/class-wp-statistics-widget.php:139
+#: includes/class-wp-statistics-widget.php:339
+msgid "Total Comments"
+msgstr "Всього коментарів"
+
+#: includes/class-wp-statistics-widget.php:146
+#: includes/class-wp-statistics-widget.php:343
+msgid "Total Spams"
+msgstr "Всього спаму"
+
+#: includes/class-wp-statistics-widget.php:153
+#: includes/class-wp-statistics-widget.php:347
+msgid "Total Users"
+msgstr "Всього користувачів"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:49
+#: includes/class-wp-statistics-shortcode.php:208
+#: includes/class-wp-statistics-widget.php:181
+#: includes/class-wp-statistics-widget.php:363
+msgid "Last Post Date"
+msgstr "Останні зміни в публікації"
+
+#: includes/class-wp-statistics-widget.php:255
+msgid "Name"
+msgstr "Ім'я"
+
+#: includes/class-wp-statistics-widget.php:313
+msgid "Select type of search engine"
+msgstr "Вибрати тип пошуковика"
+
+#. Plugin Name of the plugin
+#: includes/admin/class-wp-statistics-admin-privacy.php:25
+#: includes/admin/templates/emails/copyright.php:5
+#: includes/class-wp-statistics-meta-box.php:257
+msgid "WP Statistics"
+msgstr "WP Statistics"
+
+#: includes/admin/class-wp-statistics-admin-network.php:72
+#: includes/class-wp-statistics-install.php:304
+#: includes/class-wp-statistics-menus.php:277
+msgid "Settings"
+msgstr "Налаштування"
+
+#: includes/class-wp-statistics-install.php:321
+msgid "Click here to visit the plugin on WordPress.org"
+msgstr "Натисніть тут, щоб відвідати плагін на WordPress.org"
+
+#: includes/class-wp-statistics-install.php:321
+msgid "Visit WordPress.org page"
+msgstr "Відвідайте плагін на WordPress.org"
+
+#: includes/class-wp-statistics-install.php:323
+msgid "Click here to rate and review this plugin on WordPress.org"
+msgstr "Натисніть тут, щоб оцінити і переглянути цей плагін на WordPress.org"
+
+#: includes/class-wp-statistics-install.php:323
+msgid "Rate this plugin"
+msgstr "Оцінити цей плагін"
+
+#: includes/admin/class-wp-statistics-admin-network.php:64
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:40
+#: includes/class-wp-statistics-shortcode.php:199
+msgid "Searches"
+msgstr "Пошуки"
+
+#: includes/admin/templates/settings/exclusions.php:140
+msgid "GeoIP Exclusions"
+msgstr "GeoIP виключення"
+
+#: includes/admin/templates/settings/exclusions.php:165
+msgid "Host Exclusions"
+msgstr "Виключення хостів"
+
+#: includes/admin/templates/settings/exclusions.php:183
+msgid "Site URL Exclusions"
+msgstr "Винятки URL сайтів"
+
+#: includes/admin/templates/settings/exclusions.php:197
+msgid "Exclude the RSS feeds for registering as a hit."
+msgstr "Вилучити RSS потоки з реєстрації як перегляд."
+
+#: includes/admin/templates/settings/externals.php:78
+#: includes/admin/templates/settings/externals.php:262
+msgid "Next update will be"
+msgstr "Наступне оновлення буде"
+
+#: includes/admin/templates/settings/general.php:266
+msgid "Miscellaneous"
+msgstr "Інше"
+
+#: includes/admin/templates/layout/tabs-settings.php:7
+#: includes/admin/templates/settings/overview-display.php:15
+msgid "Dashboard"
+msgstr "Майстерня"
+
+#: includes/admin/templates/settings/exclusions.php:190
+msgid "Exclude the login page for registering as a hit."
+msgstr "Виключити сторінку входу з реєстрації як перегляд."
+
+#: includes/admin/templates/settings/exclusions.php:173
+msgid "Note: This option will NOT perform a reverse DNS lookup on each page load but instead cache the provided hostnames’ IP address for one hour. If you exclude dynamically assigned hosts, you may find some overlap when the host changes its IP address and when the cache is updated, resulting in some hits recorded."
+msgstr "Примітка: ця опція не буде виконувати зворотний пошук DNS при кожному завантаженні сторінки, але замість того, буде кешувати IP-адреса за наданими хостами протягом однієї години. Якщо ви виключаєте динамічно призначені хости, ви можете знайти деяку ступінь перекриття, коли хост міняє свою IP-адресу, і коли кеш оновлюється, в результаті чого деякі перегляди записуються."
+
+#: includes/admin/templates/settings/exclusions.php:211
+msgid "You can add a list of local URLs (i.e.  /wordpress/about, one per line) to exclude from statistics collection."
+msgstr "Список локальних URL-адрес (тобто /wordpress/about, по одному в рядку), для виключення їх зі списку статистики."
+
+#: includes/admin/templates/settings/exclusions.php:201
+msgid "Excluded 404 Pages:"
+msgstr "Виключені сторінки 404:"
+
+#: includes/admin/templates/settings/exclusions.php:172
+msgid "You can add a list of fully qualified host names (i.e. server.example.com, one per line) to exclude from statistics collection."
+msgstr "Список повних імен хоста (тобто, server.example.com, по одному в рядку), щоб виключити їх зі збору статистики."
+
+#: includes/admin/templates/layout/tabs-settings.php:3
+msgid "General"
+msgstr "Загальне"
+
+#: includes/class-wp-statistics-shortcode.php:239
+msgid "None"
+msgstr "Немає"
+
+#: includes/class-wp-statistics-schedule.php:127
+msgid "Once Weekly"
+msgstr "Один раз на тиждень"
+
+#: includes/class-wp-statistics-widget.php:260
+msgid "Items"
+msgstr "Елементи"
+
+#: includes/admin/templates/pages/online.php:46
+#: includes/admin/templates/settings/notifications.php:129
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: includes/admin/templates/optimization/purging.php:234
+#: includes/admin/templates/settings/maintenance.php:36
+msgid "Days"
+msgstr "Днів"
+
+#: includes/admin/templates/settings/general.php:170
+#: includes/admin/templates/settings/general.php:181
+#: includes/admin/templates/settings/general.php:336
+#: includes/admin/templates/settings/overview-display.php:25
+#: includes/admin/templates/settings/overview-display.php:42
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: includes/admin/templates/settings/exclusions.php:194
+msgid "Excluded RSS Feeds:"
+msgstr "Виключені канали RSS:"
+
+#: includes/admin/templates/settings/exclusions.php:187
+msgid "Excluded Login Page:"
+msgstr "Виключена сторінка входу:"
+
+#: includes/admin/templates/settings/exclusions.php:204
+msgid "Exclude any URL that returns a \"404 - Not Found\" message."
+msgstr "Виключити будь-який URL який повертає повідомлення \"404-не знайдено\"."
+
+#: includes/admin/templates/settings/externals.php:6
+msgid "GeoIP Settings"
+msgstr "Налаштування GeoIP"
+
+#: includes/admin/templates/settings/general.php:33
+msgid "Seconds"
+msgstr "Секунди"
+
+#: includes/admin/templates/settings/maintenance.php:19
+#: includes/admin/templates/settings/maintenance.php:53
+msgid "Enabled:"
+msgstr "Увімкнено:"
+
+#: includes/admin/templates/settings/exclusions.php:212
+msgid "Note: This option will NOT handle URL parameters (anything after the ?), only to the script name. Entries less than two characters will be ignored."
+msgstr "Примітка: цей параметр НЕ оброблятиме параметри URL-адреси (будь-що після ?), лише ім’я сценарію. Записи менше двох символів ігноруватимуться."
+
+#: includes/admin/templates/settings/externals.php:37
+msgid "GeoIP Collection:"
+msgstr "Колекція GeoIP:"
+
+#: includes/admin/templates/settings/externals.php:70
+msgid "Schedule Monthly Update of GeoIP DB:"
+msgstr "Розклад щомісячного оновлення бази даних GeoIP:"
+
+#: includes/admin/templates/settings/externals.php:109
+msgid "Populate Missing GeoIP After Updating GeoIP DB:"
+msgstr "Заповнити відсутній GeoIP після оновлення бази даних GeoIP:"
+
+#: includes/admin/templates/settings/externals.php:121
+msgid "Country Code for Private IP Addresses:"
+msgstr "Код країни для приватних IP-адрес:"
+
+#: includes/admin/templates/settings/externals.php:145
+msgid "GeoIP collection requires the BC Math PHP extension and it is not loaded on your version of PHP!"
+msgstr "Колекції GeoIP потрібне розширення BC Math PHP і вона не завантажується на вашій версії PHP!"
+
+#: includes/admin/templates/settings/externals.php:151
+msgid "PHP safe mode detected! GeoIP collection is not supported with PHP's safe mode enabled!"
+msgstr "Виявлено безпечний режим PHP! Збір GeoIP не підтримується, якщо ввімкнено безпечний режим PHP!"
+
+#: includes/admin/templates/settings/externals.php:212
+msgid "Matomo Referrer Spam Blacklist Settings"
+msgstr "Параметри чорного списку спаму-реферера Matomo"
+
+#: includes/admin/templates/settings/externals.php:218
+msgid "Referrer spam blacklist is provided by Matomo, available from %s."
+msgstr "Чорний список реферальних спамів надає Matomo, доступний на %s."
+
+#: includes/admin/templates/settings/externals.php:224
+msgid "Matomo Referrer Spam Blacklist Usage:"
+msgstr "Використання чорного списку спаму-реферера Matomo:"
+
+#: includes/admin/templates/settings/externals.php:238
+msgid "Update Matomo Referrer Spam Blacklist Info:"
+msgstr "Оновити інформацію про чорний список спаму-реферера Matomo:"
+
+#: includes/admin/templates/settings/externals.php:254
+msgid "Schedule weekly update of Matomo Referrer Spam Blacklist DB:"
+msgstr "Плануйте щотижневе оновлення бази даних чорного списку спаму Matomo Referrer:"
+
+#: includes/admin/templates/settings/externals.php:275
+msgid "Download of the Matomo Referrer Spam Blacklist database will be scheduled for once a week."
+msgstr "Завантаження бази даних Matomo Referrer Spam Blacklist планується раз на тиждень."
+
+#: includes/admin/templates/settings/general.php:28
+msgid "Check for Online Users Every:"
+msgstr "Перевіряйте наявність онлайн-користувачів щоразу:"
+
+#: includes/admin/templates/settings/general.php:34
+msgid "Time for checking out accurate online users on the site. Now: %s Seconds"
+msgstr "Час для перевірки точних онлайн-користувачів на сайті. Зараз: %s секунд"
+
+#: includes/admin/templates/settings/general.php:40
+msgid "Record All Users:"
+msgstr "Запис усіх користувачів:"
+
+#: includes/admin/templates/settings/privacy.php:36
+msgid "Store Entire User Agent String:"
+msgstr "Зберігати весь рядок агента користувача:"
+
+#: includes/admin/templates/settings/general.php:135
+msgid "Track All Pages:"
+msgstr "Відстежувати всі сторінки:"
+
+#: includes/admin/templates/settings/general.php:271
+msgid "Show Stats in Menu Bar:"
+msgstr "Показати статистику в меню:"
+
+#: includes/admin/templates/settings/general.php:285
+msgid "Hide Admin Notices About Non-active Features:"
+msgstr "Приховати сповіщення адміністратора про неактивні функції:"
+
+#: includes/admin/templates/settings/general.php:306
+msgid "Add Page Title to Empty Search Words:"
+msgstr "Додати назву сторінки до порожніх слів пошуку:"
+
+#: includes/admin/templates/settings/general.php:318
+msgid "Disabling all search engines is not allowed. Doing so will result in all search engines being active."
+msgstr "Вимкнення всіх пошукових систем заборонено. Це призведе до того, що всі пошукові системи стануть активними."
+
+#: includes/admin/templates/settings/general.php:353
+msgid "Include Totals:"
+msgstr "Включати підсумки:"
+
+#: includes/admin/templates/settings/maintenance.php:14
+msgid "Purge Old Data Daily"
+msgstr "Очищайте старі дані щодня"
+
+#: includes/admin/templates/settings/notifications.php:15
+msgid "Email Addresses:"
+msgstr "Адреса електронної пошти:"
+
+#: includes/admin/templates/settings/notifications.php:50
+msgid "Pruning:"
+msgstr "Очищення:"
+
+#: includes/admin/templates/settings/notifications.php:88
+msgid "Schedule:"
+msgstr "Розклад:"
+
+#: includes/admin/templates/settings/notifications.php:123
+msgid "Send reports via:"
+msgstr "Відправляти звітів через:"
+
+#: includes/admin/templates/settings/notifications.php:152
+msgid "Any shortcode supported by your installation of WordPress, include all shortcodes for WP Statistics (see the documentation for a list of codes available) are supported in the body of the message. Here are some examples:"
+msgstr "Будь-який шорткод, що підтримується вашою установкою WordPress, включає всі шорткоди для WP Statistics (див інструкцію адміністратора для списку доступних кодів), підтримувані в тілі повідомлення. Ось деякі приклади:"
+
+#: includes/admin/templates/settings/notifications.php:160
+#: includes/class-wp-statistics-admin-bar.php:97
+#: includes/class-wp-statistics-widget.php:69
+#: includes/class-wp-statistics-widget.php:280
+msgid "Yesterday's Visitors"
+msgstr "Вчорашні відвідувачі"
+
+#: includes/admin/templates/settings/notifications.php:162
+#: includes/class-wp-statistics-admin-bar.php:101
+#: includes/class-wp-statistics-widget.php:62
+#: includes/class-wp-statistics-widget.php:276
+msgid "Yesterday's Visits"
+msgstr "Вчорашні відвідування"
+
+#: includes/admin/templates/settings/notifications.php:164
+#: includes/class-wp-statistics-widget.php:104
+#: includes/class-wp-statistics-widget.php:300
+msgid "Total Visitors"
+msgstr "Всього відвідувачів"
+
+#: includes/admin/templates/settings/notifications.php:166
+#: includes/class-wp-statistics-widget.php:97
+#: includes/class-wp-statistics-widget.php:296
+msgid "Total Visits"
+msgstr "Всього відвідувань"
+
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:66
+#: includes/class-wp-statistics-shortcode.php:249
+msgid "The post/page ID to get page statistics on."
+msgstr "ID запису/сторінки для отримання статистики."
+
+#: includes/admin/class-wp-statistics-admin-notices.php:126
+msgid "The following features are disabled, please go to %ssettings page%s and enable them: %s"
+msgstr "Наступні функції вимкнено, перейдіть на %sсторінку налаштувань%s і ввімкніть їх: %s"
+
+#: includes/admin/templates/settings/about.php:35
+msgid "Donate"
+msgstr "Пожертвувати"
+
+#: includes/admin/templates/optimization/historical.php:48
+#: includes/admin/templates/optimization/updates.php:19
+#: includes/admin/templates/optimization/updates.php:36
+msgid "Update Now!"
+msgstr "Оновіть зараз!"
+
+#: includes/admin/templates/layout/tabs-optimization.php:3
+#: includes/admin/templates/optimization/export.php:9
+msgid "Export"
+msgstr "Експорт"
+
+#: includes/admin/templates/optimization/database.php:41
+#: includes/admin/templates/optimization/export.php:19
+#: includes/admin/templates/optimization/export.php:38
+#: includes/admin/templates/optimization/purging.php:211
+#: includes/admin/templates/optimization/purging.php:275
+#: includes/admin/templates/optimization/purging.php:299
+#: includes/admin/templates/settings/exclusions.php:118
+#: includes/admin/templates/settings/general.php:222
+#: includes/admin/templates/settings/notifications.php:93
+#: includes/admin/templates/settings/notifications.php:128
+msgid "Please select"
+msgstr "Будь ласка виберіть"
+
+#: includes/admin/templates/optimization/export.php:27
+msgid "Select the table for the output file."
+msgstr "Виділіть таблицю для вихідного файлу."
+
+#: includes/admin/templates/optimization/export.php:44
+msgid "Select the output file type."
+msgstr "Виберіть тип вихідного файлу."
+
+#: includes/admin/templates/optimization/export.php:55
+msgid "Include a header row as the first line of the exported file."
+msgstr "Включити рядок заголовка у першому рядку експортованого файлу."
+
+#: includes/admin/templates/optimization/export.php:56
+msgid "Start Now!"
+msgstr "Почати зараз!"
+
+#: includes/admin/templates/optimization/historical.php:16
+msgid "Historical Values"
+msgstr "Історичні значення"
+
+#: includes/admin/templates/optimization/historical.php:21
+msgid "Note: As you have just purged the database you must reload this page for these numbers to be correct."
+msgstr "Примітка: оскільки ви тільки що очистили базу даних, ви маєте перезавантажити сторінку, щоб числа були вірними."
+
+#: includes/admin/class-wp-statistics-admin-assets.php:261
+#: includes/admin/class-wp-statistics-admin-assets.php:281
+#: includes/admin/class-wp-statistics-admin-network.php:66
+#: includes/admin/pages/class-wp-statistics-admin-page-visitors.php:32
+#: includes/admin/templates/optimization/historical.php:27
+#: includes/admin/templates/pages/hits.php:25
+#: includes/admin/templates/settings/general.php:77
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:38
+#: includes/class-wp-statistics-menus.php:186
+#: includes/class-wp-statistics-shortcode.php:197
+msgid "Visitors"
+msgstr "Відвідувачі"
+
+#: includes/admin/templates/optimization/historical.php:31
+msgid "Number of historical number of visitors to the site (current value is %s)."
+msgstr "Історична кількість відвідувачів сайту (поточне значення — %s)."
+
+#: includes/admin/templates/optimization/historical.php:41
+msgid "Number of historical number of visits to the site (current value is %s)."
+msgstr "Історична кількість відвідувань сайту (поточне значення — %s)."
+
+#: includes/admin/templates/optimization/purging.php:10
+#: includes/admin/templates/optimization/purging.php:42
+#: includes/admin/templates/optimization/purging.php:73
+#: includes/admin/templates/optimization/purging.php:104
+#: includes/admin/templates/optimization/purging.php:137
+#: includes/admin/templates/optimization/purging.php:170
+msgid "Are you sure?"
+msgstr "Ви впевнені?"
+
+#: includes/admin/templates/optimization/purging.php:201
+msgid "Data"
+msgstr "Дані"
+
+#: includes/admin/templates/optimization/purging.php:220
+msgid "All data table will be lost."
+msgstr "Всі дані таблиці будуть втрачені."
+
+#: includes/admin/templates/optimization/purging.php:221
+msgid "Clear now!"
+msgstr "Тепер чисто!"
+
+#: includes/admin/templates/optimization/purging.php:237
+#: includes/admin/templates/optimization/purging.php:253
+msgid "Purge now!"
+msgstr "Очистити зараз!"
+
+#: includes/admin/templates/optimization/purging.php:265
+msgid "Delete User Agent Types"
+msgstr "Видалити типи агента користувача"
+
+#: includes/admin/templates/optimization/purging.php:285
+msgid "All visitor data will be lost for this agent type."
+msgstr "Всі дані відвідувачів буде втрачено для даного типу агента."
+
+#: includes/admin/templates/optimization/purging.php:286
+#: includes/admin/templates/optimization/purging.php:312
+#: includes/admin/templates/optimization/purging.php:327
+msgid "Delete now!"
+msgstr "Видалити зараз!"
+
+#: includes/admin/templates/optimization/purging.php:311
+msgid "All visitor data will be lost for this platform type."
+msgstr "Всі дані відвідувачів буде втрачено для даного типу платформи."
+
+#: includes/admin/templates/optimization/resources.php:6
+msgid "Resources"
+msgstr "Джерела"
+
+#: includes/admin/templates/optimization/resources.php:11
+#: includes/admin/templates/optimization/resources.php:15
+msgid "Memory usage in PHP"
+msgstr "Використано пам'яті в PHP"
+
+#: includes/admin/templates/optimization/resources.php:26
+msgid "The memory limit a script is allowed to consume, set in php.ini."
+msgstr "Обмежена пам'ять, яку скрипт може споживати, встановлена в php.ini."
+
+#: includes/admin/templates/optimization/resources.php:35
+msgid "Number of rows in the %s table"
+msgstr "Кількість рядків у таблиці %s"
+
+#: includes/admin/templates/optimization/resources.php:39
+msgid "Number of rows"
+msgstr "Кількість рядків"
+
+#: includes/admin/templates/optimization/resources.php:52
+msgid "Version Info"
+msgstr "Інформація про версію"
+
+#: includes/admin/templates/optimization/resources.php:79
+msgid "PHP Safe Mode"
+msgstr "Безпечний режим PHP"
+
+#: includes/admin/templates/optimization/resources.php:110
+msgid "jQuery Version"
+msgstr "Версія jQuery "
+
+#: includes/admin/templates/optimization/resources.php:118
+msgid "The jQuery version you are running."
+msgstr "Версія jQuery , якою ви користуєтесь"
+
+#: includes/admin/templates/optimization/resources.php:124
+msgid "cURL Version"
+msgstr "Версія cURL "
+
+#: includes/admin/templates/optimization/resources.php:132
+msgid "cURL not installed"
+msgstr "cURL не встановлено"
+
+#: includes/admin/templates/optimization/resources.php:147
+#: includes/admin/templates/optimization/resources.php:163
+#: includes/admin/templates/optimization/resources.php:179
+msgid "Installed"
+msgstr "Встановлено"
+
+#: includes/admin/templates/optimization/resources.php:149
+#: includes/admin/templates/optimization/resources.php:165
+#: includes/admin/templates/optimization/resources.php:181
+#: src/Service/Admin/AddOnDecorator.php:140
+msgid "Not installed"
+msgstr "Не встановлено"
+
+#: includes/admin/templates/optimization/resources.php:194
+msgid "File Info"
+msgstr "Інформація файлу"
+
+#: includes/admin/templates/optimization/resources.php:199
+msgid "GeoIP Database"
+msgstr "GeoIP база даних"
+
+#: includes/admin/templates/optimization/resources.php:208
+msgid "Database file does not exist."
+msgstr "Файлу бази даних не існує."
+
+#: includes/admin/templates/optimization/resources.php:210
+msgid ", created on "
+msgstr ", створено на"
+
+#: includes/admin/templates/optimization/resources.php:215
+msgid "The file size and date of the GeoIP database."
+msgstr "Розмір файлу і дата GeoIP бази даних."
+
+#: includes/admin/templates/optimization/resources.php:225
+msgid "Client Info"
+msgstr "Клієнтська інформація"
+
+#: includes/admin/templates/optimization/resources.php:230
+msgid "Client IP"
+msgstr "Клієнтське IP"
+
+#: includes/admin/templates/optimization/resources.php:235
+msgid "The client IP address."
+msgstr "IP адреса клієнта."
+
+#: includes/admin/templates/optimization/resources.php:246
+msgid "The client user agent string."
+msgstr "рядок агента користувача."
+
+#: includes/admin/class-wp-statistics-admin-assets.php:287
+#: includes/admin/meta-box/wp-statistics-meta-box-browsers.php:139
+#: includes/admin/templates/optimization/resources.php:252
+#: includes/admin/templates/pages/online.php:12
+#: includes/admin/templates/pages/refer.url.php:33
+#: includes/admin/templates/pages/top-visitors.php:19
+#: includes/admin/templates/pages/visitors.php:26
+#: includes/admin/templates/pages/words.php:27
+msgid "Browser"
+msgstr "Браузер"
+
+#: includes/admin/templates/optimization/resources.php:260
+msgid "The detected client browser."
+msgstr "Виявлений браузер користувача."
+
+#: includes/admin/templates/optimization/resources.php:271
+msgid "The detected client browser version."
+msgstr "Виявлена версія браузера користувача."
+
+#: includes/admin/templates/optimization/resources.php:282
+msgid "The detected client platform."
+msgstr "Виявлена клієнтська платформа."
+
+#: includes/admin/templates/optimization/updates.php:36
+msgid "This will replace all IP addresses in the database with hash values and cannot be undo, are you sure?"
+msgstr "Це замінить всі IP-адреси в базі хеш-значеннями, і цю дію не можна скасувати,: ви впевнені?"
+
+#: includes/admin/templates/optimization/updates.php:9
+msgid "GeoIP Options"
+msgstr "GeoIP параметри"
+
+#: includes/admin/templates/optimization/updates.php:20
+msgid "Updates any unknown location data in the database, this may take a while"
+msgstr "Оновлює будь-які дані невідомого розташування в базі даних, це може зайняти деякий час"
+
+#: includes/admin/templates/optimization/updates.php:26
+msgid "IP Addresses"
+msgstr "IP-адреси"
+
+#: includes/admin/templates/optimization/updates.php:37
+msgid "Replace IP addresses in the database with hash values, you will not be able to recover the IP addresses in the future to populate location information afterwards and this may take a while"
+msgstr "Замінить IP-адреси в базі хеш-значеннями, ви не зможете відновити IP-адреси в майбутньому, щоб заповнити інформацію про місцезнаходження потім, і це може зайняти деякий час"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:57
+msgid "IP Addresses replaced with hash values."
+msgstr "IP-адреси замінені хеш значеннями."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-optimization.php:65
+msgid "Install routine complete."
+msgstr "Установка завершена."
+
+#: includes/admin/templates/layout/tabs-optimization.php:2
+msgid "Resources/Information"
+msgstr "Джерела/інформація"
+
+#: includes/admin/templates/layout/tabs-optimization.php:4
+msgid "Purging"
+msgstr "Очищення"
+
+#: includes/admin/templates/layout/tabs-optimization.php:5
+msgid "Database"
+msgstr "База даних"
+
+#: includes/admin/templates/layout/tabs-optimization.php:6
+msgid "Updates"
+msgstr "Оновлення"
+
+#: includes/admin/templates/layout/tabs-optimization.php:7
+msgid "Historical"
+msgstr "Історичні"
+
+#: includes/admin/templates/settings/about.php:50
+msgid "Visit Us Online"
+msgstr "Відвідайте нашу сторінку"
+
+#: includes/admin/templates/settings/about.php:65
+msgid "Rate and Review at WordPress.org"
+msgstr "Оцінювання та відгук на WordPress.org"
+
+#: includes/admin/templates/settings/about.php:81
+msgid "Translations"
+msgstr "Переклади"
+
+#: includes/admin/templates/settings/about.php:96
+msgid "Support"
+msgstr "Підтримка"
+
+#: includes/admin/templates/settings/about.php:126
+msgid "Have you search the Internet for any error messages you are receiving?"
+msgstr "Чи шукали ви в Інтернеті інформацію про помилки, що ви отримуєте?"
+
+#: includes/admin/templates/settings/about.php:130
+msgid "Make sure you have access to your PHP error logs."
+msgstr "Переконайтеся, що ви маєте доступ до ваших PHP журналів помилок."
+
+#: includes/admin/templates/settings/about.php:133
+msgid "And a few things to double-check:"
+msgstr "І кілька речей перевірити ще раз:"
+
+#: includes/admin/templates/settings/about.php:136
+msgid "How's your memory_limit in php.ini?"
+msgstr "Що з вашим  memory_limit в php.ini?"
+
+#: includes/admin/templates/settings/about.php:137
+msgid "Have you tried disabling any other plugins you may have installed?"
+msgstr "Ви пробували відключити будь-які інші встановлені у вас плагіни?"
+
+#: includes/admin/templates/settings/about.php:141
+msgid "Have you tried using the default WordPress theme?"
+msgstr "Ви намагалися використовувати за замовчуванням WordPress теми?"
+
+#: includes/admin/templates/settings/about.php:142
+msgid "Have you double checked the plugin settings?"
+msgstr "Ви перевірили ще раз налаштування плагіна?"
+
+#: includes/admin/templates/settings/about.php:143
+msgid "Do you have all the required PHP extensions installed?"
+msgstr "У вас установлені всі необхідні PHP розширення ?"
+
+#: includes/admin/templates/settings/about.php:153
+msgid "Have you checked your PHP and web server error logs?"
+msgstr "Ви вже перевірили ваш PHP і веб-журнали помилок сервера?"
+
+#: includes/admin/templates/settings/about.php:156
+msgid "Still not having any luck?"
+msgstr "І досі безуспішно?"
+
+#: includes/admin/templates/settings/access-level.php:71
+msgid "Hint: manage_network = Super Admin Network, manage_options = Administrator, edit_others_posts = Editor, publish_posts = Author, edit_posts = Contributor, read = Everyone."
+msgstr "Перегляд: manage_network = Super Admin Network, manage_options = Administrator, edit_others_posts = Editor, publish_posts = Author, edit_posts = Contributor, read = Everyone."
+
+#: includes/admin/templates/settings/exclusions.php:50
+msgid "IP/Robot Exclusions"
+msgstr "Вилучення IP/Робота"
+
+#: includes/admin/templates/settings/exclusions.php:66
+msgid "Reset to Default"
+msgstr "Повернути всі початкові налаштування"
+
+#: includes/admin/templates/optimization/resources.php:68
+msgid "PHP Version"
+msgstr "Версія PHP"
+
+#: includes/admin/templates/settings/exclusions.php:11
+#: includes/admin/templates/settings/exclusions.php:75
+#: includes/admin/templates/settings/exclusions.php:110
+#: includes/admin/templates/settings/exclusions.php:129
+#: includes/admin/templates/settings/externals.php:43
+#: includes/admin/templates/settings/externals.php:60
+#: includes/admin/templates/settings/externals.php:75
+#: includes/admin/templates/settings/externals.php:114
+#: includes/admin/templates/settings/externals.php:229
+#: includes/admin/templates/settings/externals.php:259
+#: includes/admin/templates/settings/general.php:21
+#: includes/admin/templates/settings/general.php:45
+#: includes/admin/templates/settings/general.php:66
+#: includes/admin/templates/settings/general.php:86
+#: includes/admin/templates/settings/general.php:97
+#: includes/admin/templates/settings/general.php:108
+#: includes/admin/templates/settings/general.php:128
+#: includes/admin/templates/settings/general.php:139
+#: includes/admin/templates/settings/general.php:155
+#: includes/admin/templates/settings/general.php:193
+#: includes/admin/templates/settings/general.php:205
+#: includes/admin/templates/settings/general.php:246
+#: includes/admin/templates/settings/general.php:290
+#: includes/admin/templates/settings/general.php:311
+#: includes/admin/templates/settings/general.php:357
+#: includes/admin/templates/settings/maintenance.php:24
+#: includes/admin/templates/settings/maintenance.php:58
+#: includes/admin/templates/settings/notifications.php:43
+#: includes/admin/templates/settings/notifications.php:55
+#: includes/admin/templates/settings/notifications.php:76
+#: includes/admin/templates/settings/notifications.php:190
+#: includes/admin/templates/settings/privacy.php:18
+#: includes/admin/templates/settings/privacy.php:29
+#: includes/admin/templates/settings/privacy.php:41
+#: includes/admin/templates/settings/privacy.php:53
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: includes/admin/templates/settings/access-level.php:81
+#: includes/admin/templates/settings/exclusions.php:219
+#: includes/admin/templates/settings/externals.php:242
+#: includes/admin/templates/settings/externals.php:282
+#: includes/admin/templates/settings/general.php:366
+#: includes/admin/templates/settings/maintenance.php:78
+#: includes/admin/templates/settings/notifications.php:198
+#: includes/admin/templates/settings/overview-display.php:54
+#: includes/admin/templates/settings/privacy.php:62
+#: includes/admin/templates/settings/reset.php:23
+#: includes/admin/templates/settings/visitor-ip.php:158
+msgid "Update"
+msgstr "Оновити"
+
+#: includes/admin/templates/settings/about.php:110
+msgid "FAQs"
+msgstr "Часті питання"
+
+#: includes/admin/templates/settings/exclusions.php:22
+msgid "Exclude User Roles"
+msgstr "Виключити ролі користувачів"
+
+#: includes/admin/templates/settings/exclusions.php:38
+#: includes/admin/templates/settings/exclusions.php:189
+#: includes/admin/templates/settings/exclusions.php:196
+#: includes/admin/templates/settings/exclusions.php:203
+msgid "Exclude"
+msgstr "Виключити"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:357
+msgid "This is the Honey Pot for WP Statistics to use, do not delete."
+msgstr "Це - сторінка-пастка для ботів від плагіна WP Statistics. Будь ласка, не видаляйте її."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-settings.php:356
+msgid "WP Statistics Honey Pot Page"
+msgstr "WP Statistics сторінка-пастка"
+
+#: includes/admin/templates/optimization/updates.php:31
+#: includes/admin/templates/settings/privacy.php:25
+msgid "Hash IP Addresses:"
+msgstr "Хеш IP-адреси:"
+
+#: includes/admin/templates/optimization/resources.php:21
+msgid "PHP Memory Limit"
+msgstr "Обмеження пам’яті PHP"
+
+#: includes/admin/templates/optimization/resources.php:241
+msgid "User Agent"
+msgstr "User Agent"
+
+#: includes/admin/templates/settings/exclusions.php:39
+msgid "Exclude %s role from data collection."
+msgstr "Виключити роль %s зі збору даних."
+
+#: includes/admin/templates/settings/exclusions.php:54
+msgid "Robot List:"
+msgstr "Список роботів:"
+
+#: includes/admin/templates/settings/exclusions.php:91
+msgid "Excluded IP Address List:"
+msgstr "Список виключених IP-адресів:"
+
+#: includes/admin/templates/optimization/export.php:14
+msgid "Export from:"
+msgstr "Експорт з:"
+
+#: includes/admin/templates/optimization/export.php:33
+msgid "Export To:"
+msgstr "Експорт до:"
+
+#: includes/admin/templates/settings/exclusions.php:9
+msgid "Record Exclusions:"
+msgstr "Виключення записів:"
+
+#: includes/admin/templates/optimization/purging.php:206
+msgid "Empty Table:"
+msgstr "Порожня таблиця:"
+
+#: includes/admin/templates/optimization/purging.php:294
+msgid "Delete Platforms:"
+msgstr "Видалити платформи:"
+
+#: includes/admin/templates/optimization/resources.php:38
+msgid "Row"
+msgid_plural "Rows"
+msgstr[0] "Рядок"
+msgstr[1] "Рядокі"
+msgstr[2] "Рядоків"
+
+#: includes/admin/templates/optimization/export.php:50
+msgid "Include Header Row:"
+msgstr "Включити рядок заголовка:"
+
+#: includes/admin/templates/optimization/purging.php:229
+msgid "Purge records older than:"
+msgstr "Очистити записи старші за:"
+
+#: includes/admin/templates/optimization/purging.php:245
+msgid "Purge visitors with more than:"
+msgstr "Очистити відвідувачів із більш ніж:"
+
+#: includes/admin/templates/optimization/purging.php:270
+msgid "Delete Agents:"
+msgstr "Видалити агентів:"
+
+#: includes/admin/templates/optimization/resources.php:73
+msgid "The PHP version you are running."
+msgstr "Версія PHP , якою ви користуєтесь."
+
+#: includes/admin/templates/optimization/resources.php:89
+msgid "Is PHP Safe Mode active. The GeoIP code is not supported in Safe Mode."
+msgstr "Чи активний безпечний режим PHP. Код GeoIP не підтримується в безпечному режимі."
+
+#: includes/admin/templates/optimization/resources.php:135
+msgid "The PHP cURL Extension version you are running. cURL is required for the GeoIP code, if it is not installed GeoIP will be disabled."
+msgstr "Версія розширення PHP cURL, яку ви використовуєте. Для коду GeoIP потрібен cURL, якщо його не встановлено, GeoIP буде вимкнено."
+
+#: includes/admin/templates/settings/access-level.php:72
+msgid "Each of the above cascades the rights upwards in the default WordPress configuration. For example, selecting publish_posts grants the right to Authors, Editors, Admins, and Super Admins."
+msgstr "Кожне з перерахованих вище каскадує права вгору в конфігурації WordPress за замовчуванням. Наприклад, вибір publish_posts надає право авторам, редакторам, адміністраторам і суперадміністраторам."
+
+#: includes/admin/templates/settings/exclusions.php:65
+msgid "It is a list of words (one per line) to match against to detect robots. Entries must be at least four characters long, or they will be ignored."
+msgstr "Це список слів (по одному на рядок), які потрібно зіставити для виявлення роботів. Записи мають містити принаймні чотири символи, інакше вони будуть проігноровані."
+
+#: includes/admin/templates/settings/exclusions.php:72
+msgid "Force Robot List Update After Upgrades:"
+msgstr "Примусове оновлення списку роботів після оновлень:"
+
+#: includes/admin/templates/settings/exclusions.php:82
+msgid "Robot Visit Threshold:"
+msgstr "Ліміт відвідувань робота:"
+
+#: includes/admin/templates/settings/exclusions.php:86
+msgid "Treat visitors with more than this number of visits per day as robots. 0 = disabled."
+msgstr "Вважати відвідувачів з кількістю відвідувань в день більше цього числа, роботами. 0 = відключено."
+
+#: includes/admin/templates/settings/exclusions.php:120
+msgid "Create a new Honey Pot page"
+msgstr "Створити нову сторінку-ловушку"
+
+#: includes/admin/templates/settings/exclusions.php:126
+msgid "Treat Corrupt Browser Info as a Bot:"
+msgstr "Розглядайте пошкоджену інформацію веб-переглядача як бота:"
+
+#: includes/class-wp-statistics-search-engine.php:37
+msgid "Ask.com"
+msgstr "Ask.com"
+
+#: includes/class-wp-statistics-exclusion.php:26
+msgid "Referrer Spam"
+msgstr "Referrer Spam"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:275
+#: includes/admin/templates/pages/refer.url.php:37
+#: includes/admin/templates/pages/top-visitors.php:2
+#: includes/admin/templates/pages/top-visitors.php:26
+#: includes/admin/templates/pages/visitors.php:35
+#: includes/admin/templates/pages/words.php:34
+msgid "Date"
+msgstr "Дата"
+
+#: includes/class-wp-statistics-purge.php:221
+msgid "No visitors found to purge."
+msgstr "Не знайдено жодного відвідувача для очищення."
+
+#: includes/class-wp-statistics-purge.php:217
+msgid "%s records purged successfully."
+msgstr "%s записів успішно очищено."
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:285
+#: includes/class-wp-statistics-purge.php:224
+msgid "Number of hits must be greater than or equal to 10!"
+msgstr "Число переглядів повинно бути більше або дорівнювати 10!"
+
+#: includes/admin/class-wp-statistics-admin-notices.php:99
+msgid "Have you thought about donating to WP Statistics?"
+msgstr "Чи замислювалися ви про пожертвування для WP Statistics?"
+
+#: includes/admin/class-wp-statistics-admin-notices.php:99
+msgid "Donate Now!"
+msgstr "Пожертвувати зараз!"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:311
+msgid "to"
+msgstr "до"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:313
+msgid "Go"
+msgstr "перейти"
+
+#: includes/class-wp-statistics-search-engine.php:97
+msgid "Yahoo!"
+msgstr "Yahoo!"
+
+#: includes/class-wp-statistics-search-engine.php:107
+msgid "Yandex"
+msgstr "Yandex"
+
+#: includes/class-wp-statistics-search-engine.php:67
+msgid "clearch.org"
+msgstr "clearch.org"
+
+#: includes/class-wp-statistics-search-engine.php:77
+msgid "DuckDuckGo"
+msgstr "DuckDuckGo"
+
+#: includes/class-wp-statistics-search-engine.php:57
+msgid "Bing"
+msgstr "Bing"
+
+#: includes/class-wp-statistics-search-engine.php:47
+msgid "Baidu"
+msgstr "Baidu"
+
+#: includes/class-wp-statistics-exclusion.php:30
+msgid "User Role"
+msgstr "Роль користувача"
+
+#: includes/class-wp-statistics-exclusion.php:24
+#: includes/class-wp-statistics-pages.php:368
+msgid "Login Page"
+msgstr "Сторінка входу"
+
+#: includes/class-wp-statistics-exclusion.php:25
+msgid "Admin Page"
+msgstr "Сторінка адміністратора"
+
+#: includes/class-wp-statistics-exclusion.php:23
+msgid "Self Referral"
+msgstr "самостійний реферал"
+
+#: includes/class-wp-statistics-exclusion.php:22
+msgid "IP Match"
+msgstr "IP-матч"
+
+#: includes/class-wp-statistics-exclusion.php:20
+msgid "Robot"
+msgstr "Робот"
+
+#: includes/class-wp-statistics-exclusion.php:32
+msgid "GeoIP"
+msgstr "GeoIP"
+
+#: includes/class-wp-statistics-search-engine.php:87
+msgid "Google"
+msgstr "Google"
+
+#: includes/class-wp-statistics-meta-box.php:80
+msgid "Quick Stats"
+msgstr "Швидка статистика"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-hits.php:34
+#: includes/class-wp-statistics-meta-box.php:164
+#: includes/class-wp-statistics-meta-box.php:264
+msgid "Hit Statistics"
+msgstr "Статистика переглядів"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-visitors.php:32
+#: includes/class-wp-statistics-meta-box.php:220
+msgid "Recent Visitors"
+msgstr "Нещодавні відвідувачі"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-refer.php:37
+msgid "Top Referring Sites"
+msgstr "Топ реферних сайтів"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-summary.php:33
+#: includes/class-wp-statistics-meta-box.php:178
+#: includes/class-wp-statistics-widget.php:118
+#: includes/class-wp-statistics-widget.php:308
+msgid "Search Engine Referrals"
+msgstr "Пошукові реферали"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-words.php:36
+msgid "Latest Search Words"
+msgstr "Останні пошукові слова"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-post.php:21
+msgid "This post is not yet published."
+msgstr "Ця публікація ще не опублікована."
+
+#: includes/class-wp-statistics-geoip.php:418
+msgid "Unable to load the GeoIP database, make sure you have downloaded it in the settings page."
+msgstr "Не вдалося завантажити GeoIP бази даних, переконайтеся, що ви завантажили його на сторінку налаштувань."
+
+#: includes/class-wp-statistics-geoip.php:449
+msgid "Updated %s GeoIP records in the visitors database."
+msgstr "Оновлено %s GeoIP записів бази даних відвідувачів."
+
+#: includes/class-wp-statistics-purge.php:46
+#: includes/class-wp-statistics-purge.php:76
+#: includes/class-wp-statistics-purge.php:87
+#: includes/class-wp-statistics-purge.php:97
+#: includes/class-wp-statistics-purge.php:159
+msgid "%s data older than %s days purged successfully."
+msgstr "%s даних старіше %s днів успішно очищено."
+
+#: includes/class-wp-statistics-purge.php:48
+#: includes/class-wp-statistics-purge.php:78
+#: includes/class-wp-statistics-purge.php:89
+#: includes/class-wp-statistics-purge.php:99
+#: includes/class-wp-statistics-purge.php:161
+msgid "No records found to purge from %s!"
+msgstr "Записів не знайдено для очищення з %s!"
+
+#: includes/class-wp-statistics-purge.php:167
+#: includes/class-wp-statistics-purge.php:168
+#: includes/class-wp-statistics-purge.php:230
+#: includes/class-wp-statistics-purge.php:231
+msgid "Database pruned on"
+msgstr "База даних, відсічена на"
+
+#: includes/class-wp-statistics-purge.php:173
+msgid "Please select a value over 30 days."
+msgstr "Будь ласка, виберіть значення протягом 30 днів."
+
+#: includes/admin/pages/class-wp-statistics-admin-page-browsers.php:37
+msgid "Browser Statistics"
+msgstr "Статистика браузерів"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:277
+#: includes/admin/class-wp-statistics-admin-network.php:68
+#: includes/class-wp-statistics-menus.php:242
+msgid "Browsers"
+msgstr "Браузери"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:293
+#: includes/admin/templates/optimization/resources.php:277
+#: includes/admin/templates/pages/top-visitors.php:28
+#: includes/admin/templates/pages/visitors.php:40
+msgid "Platform"
+msgstr "Платформа"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-exclusions.php:35
+msgid "Exclusions Statistics"
+msgstr "Виключення в статистиці"
+
+#: includes/admin/class-wp-statistics-admin-template.php:224
+msgid "10 Days"
+msgstr "10 днів"
+
+#: includes/admin/class-wp-statistics-admin-template.php:225
+msgid "20 Days"
+msgstr "20 днів"
+
+#: includes/admin/class-wp-statistics-admin-template.php:226
+msgid "30 Days"
+msgstr "30 днів"
+
+#: includes/admin/class-wp-statistics-admin-template.php:227
+msgid "2 Months"
+msgstr "2 місяці"
+
+#: includes/admin/class-wp-statistics-admin-template.php:228
+msgid "3 Months"
+msgstr "3 місяці"
+
+#: includes/admin/class-wp-statistics-admin-template.php:229
+msgid "6 Months"
+msgstr "6 місяців"
+
+#: includes/admin/class-wp-statistics-admin-template.php:230
+msgid "9 Months"
+msgstr "9 місяців"
+
+#: includes/admin/class-wp-statistics-admin-template.php:231
+msgid "1 Year"
+msgstr "1 рік"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:295
+#: includes/admin/templates/pages/online.php:21
+#: includes/admin/templates/pages/visitors.php:46
+msgid "Page"
+msgstr "Сторінка"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:260
+#: includes/admin/pages/class-wp-statistics-admin-page-online.php:25
+#: includes/admin/templates/pages/page-chart.php:73
+#: includes/admin/templates/settings/general.php:11
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:36
+#: includes/class-wp-statistics-meta-box.php:240
+#: includes/class-wp-statistics-shortcode.php:195
+#: includes/class-wp-statistics-widget.php:41
+#: includes/class-wp-statistics-widget.php:264
+msgid "Online Users"
+msgstr "Користувачі онлайн"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-searches.php:34
+msgid "Search Engine Referral Statistics"
+msgstr "Статистика пошукових реферів"
+
+#: includes/admin/pages/class-wp-statistics-admin-page-country.php:36
+#: includes/admin/templates/pages/page-chart.php:43
+#: includes/class-wp-statistics-meta-box.php:136
+msgid "Top Countries"
+msgstr "Топ країни"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:279
+msgid "Flag"
+msgstr "Флаг"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:280
+#: includes/admin/templates/pages/online.php:14
+#: includes/admin/templates/pages/refer.url.php:35
+#: includes/admin/templates/pages/top-visitors.php:21
+#: includes/admin/templates/pages/top.refer.php:25
+#: includes/admin/templates/pages/visitors.php:28
+#: includes/admin/templates/pages/words.php:29
+msgid "Country"
+msgstr "Країна"
+
+#: includes/class-wp-statistics-meta-box.php:192
+msgid "Top Pages"
+msgstr "Топ сторінки"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:262
+#: includes/admin/class-wp-statistics-admin-assets.php:291
+#: includes/admin/class-wp-statistics-admin-user.php:33
+#: includes/admin/templates/optimization/historical.php:37
+#: includes/admin/templates/pages/hits.php:23
+#: includes/admin/templates/pages/pages.php:46
+#: includes/admin/templates/pages/taxonomies.php:123
+#: includes/admin/templates/settings/general.php:56
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:37
+#: includes/class-wp-statistics-shortcode.php:196
+msgid "Visits"
+msgstr "Відвідування"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-referring.php:49
+#: includes/admin/templates/pages/top.refer.php:27
+msgid "References"
+msgstr "Посилання"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:285
+msgid "Address"
+msgstr "Адреса"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:263
+#: includes/admin/class-wp-statistics-admin-assets.php:296
+#: includes/admin/class-wp-statistics-admin-assets.php:408
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:54
+msgid "Today"
+msgstr "Сьогодні"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:264
+#: includes/admin/class-wp-statistics-admin-assets.php:297
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:55
+msgid "Yesterday"
+msgstr "Учора"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-summary.php:34
+msgid "Current Time and Date"
+msgstr "Поточний час та дата"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-summary.php:35
+msgid "(Adjustment)"
+msgstr "(Корегування)"
+
+#: includes/admin/class-wp-statistics-admin-network.php:60
+#: includes/admin/class-wp-statistics-admin-post.php:60
+#: includes/admin/class-wp-statistics-admin-post.php:167
+#: includes/admin/class-wp-statistics-admin-taxonomy.php:56
+#: includes/admin/class-wp-statistics-admin-taxonomy.php:63
+#: includes/admin/templates/optimization/purging.php:250
+#: includes/admin/templates/pages/taxonomies.php:98
+#: includes/admin/templates/pages/top-visitors.php:31
+#: includes/admin/templates/pages/visitors.php:41
+#: includes/admin/templates/settings/maintenance.php:70
+#: includes/class-wp-statistics-menus.php:172
+msgid "Hits"
+msgstr "Перегляди"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:289
+#: includes/admin/templates/pages/online.php:19
+#: includes/admin/templates/pages/refer.url.php:32
+#: includes/admin/templates/pages/top-visitors.php:27
+#: includes/admin/templates/pages/visitors.php:39
+#: includes/admin/templates/pages/words.php:35
+msgid "IP"
+msgstr "IP"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:292
+msgid "Agent"
+msgstr "Агент"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:294
+#: includes/admin/templates/optimization/resources.php:266
+msgid "Version"
+msgstr "Версія"
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:116
+#: includes/admin/class-wp-statistics-admin-ajax.php:153
+#: includes/admin/class-wp-statistics-admin-ajax.php:189
+#: includes/admin/class-wp-statistics-admin-ajax.php:220
+#: includes/admin/class-wp-statistics-admin-ajax.php:236
+#: includes/admin/class-wp-statistics-admin-ajax.php:261
+#: includes/admin/class-wp-statistics-admin-ajax.php:290
+#: includes/admin/class-wp-statistics-admin-ajax.php:387
+msgid "Access denied!"
+msgstr "В доступі відмовлено!"
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:110
+msgid "No agent data found to remove!"
+msgstr "Даних агента для видалення не знайдено!"
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:113
+#: includes/admin/class-wp-statistics-admin-ajax.php:150
+#: includes/admin/class-wp-statistics-admin-ajax.php:186
+#: includes/admin/class-wp-statistics-admin-ajax.php:208
+msgid "Please select the desired items."
+msgstr "Будь ласка, виберіть бажані об'єкти."
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:145
+msgid "%s platform data deleted successfully."
+msgstr "%s даних платформи видалені успішно."
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:147
+msgid "No platform data found to remove!"
+msgstr "Даних платформи для видалення не знайдено!"
+
+#: includes/class-wp-statistics-db.php:134
+msgid "%s table data deleted successfully."
+msgstr "%s даних таблиці успішно видалено."
+
+#: includes/class-wp-statistics-db.php:138
+msgid "Error, %s not emptied!"
+msgstr "Помилка %s не очищено!"
+
+#: includes/admin/templates/optimization/database.php:8
+msgid "Database Setup"
+msgstr "Налаштування бази даних"
+
+#: includes/admin/templates/optimization/database.php:17
+msgid "Install Now!"
+msgstr "Встановити зараз!"
+
+#: includes/admin/class-wp-statistics-admin-network.php:67
+#: includes/class-wp-statistics-menus.php:214
+msgid "Countries"
+msgstr "Країни"
+
+#: includes/admin/class-wp-statistics-admin-network.php:70
+#: includes/admin/templates/layout/tabs-settings.php:9
+#: includes/admin/templates/pages/exclusions.php:22
+#: includes/admin/templates/settings/exclusions.php:5
+#: includes/class-wp-statistics-menus.php:263
+#: includes/class-wp-statistics-meta-box.php:280
+msgid "Exclusions"
+msgstr "Вилучення"
+
+#: includes/class-wp-statistics-exclusion.php:29
+msgid "Excluded URL"
+msgstr "Виключена URL-адреса"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-hits.php:79
+msgid "Hits in the last %s days"
+msgstr "Переглядів за останні %s днів"
+
+#: includes/class-wp-statistics-exclusion.php:31
+msgid "Host name"
+msgstr "Ім'я хоста"
+
+#: includes/admin/templates/pages/exclusions.php:26
+#: includes/admin/templates/pages/hits.php:29
+msgid "Chart Total:"
+msgstr "Усього діаграми:"
+
+#: includes/admin/templates/pages/exclusions.php:31
+#: includes/admin/templates/pages/hits.php:37
+msgid "All Time Total:"
+msgstr "Усього за весь час:"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:274
+msgid "Daily Total"
+msgstr "Всього за день"
+
+#: includes/class-wp-statistics-meta-box.php:87
+msgid "Summary"
+msgstr "Короткий вміст"
+
+#: includes/admin/templates/pages/online.php:51
+#: includes/admin/templates/pages/refer.url.php:55
+#: includes/admin/templates/pages/top-visitors.php:60
+#: includes/admin/templates/pages/visitors.php:68
+#: includes/admin/templates/settings/overview-display.php:32
+msgid "Map"
+msgstr "Мапа"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-browsers.php:98
+msgid "Other"
+msgstr "Інше"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:319
+#: includes/admin/class-wp-statistics-admin-template.php:237
+#: includes/admin/pages/class-wp-statistics-admin-page-category.php:60
+#: includes/admin/pages/class-wp-statistics-admin-page-tags.php:61
+#: includes/admin/pages/class-wp-statistics-admin-page-visitors.php:54
+#: includes/admin/pages/class-wp-statistics-admin-page-words.php:44
+#: includes/admin/templates/layout/select.php:32
+#: includes/admin/templates/optimization/database.php:47
+#: includes/admin/templates/optimization/purging.php:217
+#: includes/admin/templates/pages/refer.url.php:3
+#: includes/admin/templates/pages/top.refer.php:4
+#: includes/class-wp-statistics-widget.php:326
+msgid "All"
+msgstr "Все"
+
+#: includes/class-wp-statistics-exclusion.php:34
+msgid "Robot threshold"
+msgstr "Поріг робота"
+
+#: includes/admin/templates/pages/online.php:20
+msgid "Online For"
+msgstr "Онлайн для"
+
+#: includes/admin/class-wp-statistics-admin-assets.php:273
+#: includes/admin/TinyMCE/class-wp-statistics-tinymce.php:59
+msgid "Total"
+msgstr "Всього"
+
+#: includes/admin/meta-box/wp-statistics-meta-box-post.php:61
+msgid "Number of Hits"
+msgstr "Кількість переглядів"
+
+#: includes/admin/templates/optimization/database.php:13
+msgid "Re-run Install:"
+msgstr "Перезапустіть інсталяцію:"
+
+#: includes/admin/class-wp-statistics-admin-ajax.php:108
+msgid "%s agent data deleted successfully."
+msgstr "%s дані агента успішно видалені."

@@ -7,7 +7,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<header>
+<header id="header">
   <div class="logo" onclick="location.href='<?=get_home_url()?>';">
     <div></div>
   </div>

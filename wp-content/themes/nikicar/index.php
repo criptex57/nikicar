@@ -16,18 +16,18 @@
 <div class="inquire">
   <div class="inquire-text">
     <div class="inquire-text-title"><b><?=CFS()->get('inquire-text-title')?></b></div>
-    <div class="inquire-text-cont"><b><?=CFS()->get('inquire-text-cont')?></div>
+    <div class="inquire-text-cont"><?=CFS()->get('inquire-text-cont')?></div>
   </div>
   <div class="inquire-anim" id="anim-cont">
     <div class="inquire-partial" id="anim-part">
-      <a id="anim-link" href="#"><b>Більше 〉</b></a>
+        <a id="anim-link" href="/help"><b>Більше<span class="help-button"></span></b></a>
     </div>
   </div>
 </div>
 <div class="souvenir">
   <div class="souvenir-text">
-    <div class="souvenir-text-title"><b><b><?=CFS()->get('souvenir-text-title')?></b></div>
-    <div class="souvenir-text-cont"><b><?=CFS()->get('souvenir-text-cont')?></div>
+    <div class="souvenir-text-title"><b><?=CFS()->get('souvenir-text-title')?></b></div>
+    <div class="souvenir-text-cont"><?=CFS()->get('souvenir-text-cont')?></div>
   </div>
   <div class="souvenir-images">
     <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_1.png" alt=""></a></div>
@@ -36,7 +36,7 @@
     <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_4.png" alt=""></a></div>
   </div>
 </div>
-<div class="contacts">
+<div class="contacts" id="contacts">
   <div class="contacts-image">
     <div></div>
   </div>
