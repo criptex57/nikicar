@@ -30,7 +30,7 @@ function register_post_help(){
     'label'  => null,
     'labels' => [
       'name'               => 'Допомога', // основное название для типа записи
-      'singular_name'      => 'single_help', // название для одной записи этого типа
+      'singular_name'      => 'Додати тип допомоги', // название для одной записи этого типа
       'add_new'            => 'Додати тип допомоги', // для добавления новой записи
       'add_new_item'       => 'Додати тип допомоги', // заголовка у вновь создаваемой записи в админ-панели.
       'edit_item'          => 'Редагувати тип допомоги', // для редактирования типа записи
@@ -53,7 +53,7 @@ function register_post_help(){
     'show_in_rest'        => null, // добавить в REST API. C WP 4.7
     'rest_base'           => null, // $post_type. C WP 4.7
     'menu_position'       => 5,
-    'menu_icon' => 'dashicons-admin-users',
+    'menu_icon' => 'dashicons-sos',
     //'capability_type'   => 'post',
     //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
     //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
@@ -73,7 +73,7 @@ function register_post_report(){
     'label'  => null,
     'labels' => [
       'name'               => 'Звітність',
-      'singular_name'      => 'single_report',
+      'singular_name'      => 'Додати звіт',
       'add_new'            => 'Додати звіт',
       'add_new_item'       => 'Додати звіт',
       'edit_item'          => 'Редагувати звіт',
@@ -101,6 +101,44 @@ function register_post_report(){
   ] );
 }
 
+//Создание типа report
+add_action( 'init', 'register_post_souvenir' );
+function register_post_souvenir(){
+	register_post_type( 'souvenir', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Сувеніри',
+			'singular_name'      => 'Додати сувенір',
+			'add_new'            => 'Додати сувенір',
+			'add_new_item'       => 'Додати сувенір',
+			'edit_item'          => 'Редагувати сувенір',
+			'new_item'           => 'Новий сувенір',
+			'view_item'          => 'Дивитись',
+			'search_items'       => 'Шукати сувенір',
+			'not_found'          => 'Не знайдено',
+			'not_found_in_trash' => 'Не знайдено у кошику',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Сувеніри',
+		],
+		'description'            => '',
+		'public'                 => true,
+		'show_in_menu'           => true,
+		'show_in_rest'        => null,
+		'rest_base'           => null,
+		'menu_position'       => 5,
+		'publicly_queryable' => true,
+		'menu_icon' => 'dashicons-awards',
+		'hierarchical'        => false,
+		'supports'            => [ 'title', 'editor', 'thumbnail' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+}
+
+//flush_rewrite_rules(); //@todo Обновляет правила перезаписи ЧПУ. Запускать при добавлении новых типов записи
+
 function wordSafeBreak($str) {
   for($middle = floor(strlen($str)/2); $middle >= 0 && $str[$middle] !== ' '; $middle--){
     if ($middle < 0) {
@@ -110,3 +148,4 @@ function wordSafeBreak($str) {
 
   return [substr($str, 0, $middle), substr($str, $middle+1)];
 }
+

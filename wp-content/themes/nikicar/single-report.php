@@ -1,45 +1,17 @@
 <?=get_header()?>
 <?php $post = get_post();?>
-
-<?php //?>
-<?php //$post->post_date?>
-<div class="help-single-container">
-    <div class="help-single-container-block">
-        <div class="help-single-title">
-            <h2><?=$post->post_title?></h2>
-            <a class="btn help-single-donate" target="_blank" href="<?=CFS()->get('help-single-monobank') ?>">Задонатити</a>
+<div class="report-single-container">
+    <div class="report-single-head">
+        <div class="report-single-head-title">
+            <div class="report-single-date"><?=date('d.m.y', strtotime($post->post_date))?></div>
+            <div class="report-single-title"><?=$post->post_title?></div>
         </div>
-        <?php foreach(wordSafeBreak($post->post_content) as $key => $body):?>
-          <div class="help-single-body-desktop">
-            <?=$body?>
-          </div>
-        <?php endforeach;?>
-        <div class="help-single-body-mobile">
-          <?=$post->post_content?>
+        <div class="report-single-head-preview">
+            <img width="500" src="<?=get_the_post_thumbnail_url($post->ID)?>" alt="">
         </div>
     </div>
-    <div class="sim-slider">
-        <ul class="sim-slider-list">
-            <?php if(get_the_post_thumbnail_url($post->ID)):?>
-                <li class="sim-slider-element"><img src="<?=get_the_post_thumbnail_url($post->ID)?>" alt="'.$key.'"></li>
-            <?php endif;?>
-            <?php foreach(CFS()->get('help-single-images') as $key => $image):?>
-                <li class="sim-slider-element"><img src="<?=$image['help-single-image']?>" alt="'.$key.'"></li>
-            <?php endforeach;?>
-        </ul>
-        <div class="sim-slider-dots"></div>
-        <div class="sim-slider-arrow-left"></div>
-        <div class="sim-slider-arrow-right"></div>
-    </div>
-    <div class="help-single-video-container">
-        <?php foreach(CFS()->get('help-single-video-block') as $key => $video):?>
-            <div class="help-single-video-div">
-                <h2><?=$video['help-single-video-title']?></h2>
-                <?=$video['help-single-video']?>
-            </div>
-
-        <?php endforeach;?>
+    <div class="report-single-body">
+        <div class="report-single-text"><?=$post->post_content?></div>
     </div>
 </div>
-
 <?=get_footer()?>

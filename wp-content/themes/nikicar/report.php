@@ -12,8 +12,8 @@
     <div class="report-content-loop">
       <?php $i = 0;?>
       <?php foreach (get_posts( ['post_type' => 'report'] ) as $help):?>
-          <div class="report-content <?=$i==2||$i==3?'report-move':''?>">
-              <div class="report-content-text">
+          <div class="report-content <?=$i==0||$i==1?'report-move':''?>">
+              <div class="report-content-text" style="text-align: center">
                 <div class="report-content-text-date"><?=date('d.m.y', strtotime($help->post_date))?></div>
                 <div class="report-content-text-title"><?=$help->post_title?></div>
               </div>

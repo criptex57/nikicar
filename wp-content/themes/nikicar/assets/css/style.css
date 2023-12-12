@@ -709,7 +709,7 @@ div.sim-slider-arrow-right {
     font-weight: bold;
     padding: 10px 40px;
     border: var(--color-white) 4px solid;
-    border-radius: 200px;
+    border-radius: 10px;
     display: block;
     color: var(--color-white);
     margin: auto;
@@ -1349,6 +1349,7 @@ footer {
     width: calc(1200px / 3);
     padding: 10px;
     font-size: var(--font-2);
+    font-weight: bold;
 }
 .report-head-desc {
     width: calc(1200px / 3 * 2);
@@ -1434,6 +1435,86 @@ footer {
 }
 
 /****************** СТОРІНКА REPORT END ***************************************************************/
+/****************** СТОРІНКА REPORT SINGLE START ***************************************************************/
+.report-single-container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.report-single-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.report-single-head-title{
+    background: url("../img/pech.png") var(--color-dark);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.report-single-head-preview > img {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.report-single-title {
+    font-size: var(--font-3);
+    font-weight: bold;
+    align-self: center;
+}
+
+.report-single-date {
+    font-size: var(--font-4);
+    color: var(--color-orange);
+}
+
+.report-single-text img {
+    display: block;
+    margin: 15px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .report-single-head {
+        flex-direction: column;
+
+    }
+
+    .report-single-head-preview > img {
+        width: 90%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .report-single-head-title {
+        width: 90%;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+/****************** СТОРІНКА REPORT SINGLE END ***************************************************************/
+
+
+
+
+
+
+
+
+
+
 /****************** TEST START ***************************************************************/
 footer {
     background: var(--color-opacity);
@@ -1452,15 +1533,7 @@ header > nav > ul > li, .about-us-first-block-image > div > a {
     border-radius: 2px;
 }
 
-.help-item > img, .sim-slider-list > li > img, .souvenir-block > a > img {
-    filter: saturate(50%) sepia(20%);
-}
-
-.help-item > img:hover {
-    filter: saturate(100%) sepia(0%);
-}
-
-.contacts, .about-us-first-block-icons-cont, .help-single-video-container{
+.contacts, .about-us-first-block-icons-cont, .help-single-video-container, .report-single-head-title{
     background: url("../img/pech.png") var(--color-dark);
     background-position: center;
     background-size: cover;

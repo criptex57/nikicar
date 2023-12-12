@@ -30,10 +30,13 @@
     <div class="souvenir-text-cont"><?=CFS()->get('souvenir-text-cont')?></div>
   </div>
   <div class="souvenir-images">
-    <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_1.png" alt=""></a></div>
-    <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_2.png" alt=""></a></div>
-    <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_3.png" alt=""></a></div>
-    <div class="souvenir-block"><a href="#"><img src="/wp-content/themes/nikicar/assets/img/souvenir_4.png" alt=""></a></div>
+    <?php foreach (get_posts('post_type=souvenir&orderby=rand&numberposts=4') as $souvenir):?>
+        <div class="souvenir-block">
+            <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>">
+                <img src="<?=get_the_post_thumbnail_url($souvenir->ID)?>" alt="">
+            </a>
+        </div>
+    <?php endforeach;?>
   </div>
 </div>
 <div class="contacts" id="contacts">
