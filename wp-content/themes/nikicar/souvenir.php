@@ -6,15 +6,15 @@
         <div class="souvenir-desc"><?= CFS()->get('souvenir-desc')?></div>
     </div>
     <div class="souvenir-body">
-	    <?php foreach (get_posts( ['post_type' => 'souvenir'] ) as $help):?>
+	    <?php foreach (get_posts( ['post_type' => 'souvenir'] ) as $souvenir):?>
             <div class="souvenir-item">
                 <div class="souvenir-item-image">
-                    <img src="<?=get_the_post_thumbnail_url($help->ID)?>" alt="">
+                    <img src="<?=get_the_post_thumbnail_url($souvenir->ID)?>" alt="">
                 </div>
                 <div class="souvenir-item-desc">
-                    <div class="souvenir-item-name"><?=$help->post_title?></div>
-                    <div class="souvenir-item-price">1000 грн</div>
-                    <a class="souvenir-item-btn" href="<?php echo '/'.$help->post_type.'/'.$help->post_name?>">Більше</a>
+                    <div class="souvenir-item-name"><?=$souvenir->post_title?></div>
+                    <div class="souvenir-item-price"><?=CFS()->get('souvenir-single-price', $souvenir->ID)?> ГРН</div>
+                    <a class="souvenir-item-btn" href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>">Більше</a>
                 </div>
             </div>
 	    <?php endforeach;?>
