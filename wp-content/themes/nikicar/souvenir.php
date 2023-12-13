@@ -2,8 +2,8 @@
 <?=get_header()?>
 <div class="souvenir-container">
     <div class="souvenir-head">
-        <div class="souvenir-title"><?= CFS()->get('report-souvenir-title')?></div>
-        <div class="souvenir-desc"><?= CFS()->get('report-souvenir-desc')?></div>
+        <div class="souvenir-title"><?= CFS()->get('souvenir-title')?></div>
+        <div class="souvenir-desc"><?= CFS()->get('souvenir-desc')?></div>
     </div>
     <div class="souvenir-body">
 	    <?php foreach (get_posts( ['post_type' => 'souvenir'] ) as $help):?>
@@ -13,8 +13,8 @@
                 </div>
                 <div class="souvenir-item-desc">
                     <div class="souvenir-item-name"><?=$help->post_title?></div>
-                    <div class="souvenir-item-price"></div>
-                    <a class="btn souvenir-item-btn" href="<?php echo '/'.$help->post_type.'/'.$help->post_name?>">Більше</a>
+                    <div class="souvenir-item-price">1000 грн</div>
+                    <a class="souvenir-item-btn" href="<?php echo '/'.$help->post_type.'/'.$help->post_name?>">Більше</a>
                 </div>
             </div>
 	    <?php endforeach;?>
