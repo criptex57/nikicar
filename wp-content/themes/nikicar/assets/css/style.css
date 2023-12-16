@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: niki-car.space/
 Tags: niki-car.space/
 */
+
 @font-face {
     font-family: "Montserrat";
     font-weight: normal;
@@ -113,7 +114,7 @@ b {
     font-weight: bold;
 }
 
-a.btn {
+.btn {
     color: var(--color-white);
     background: var(--color-orange);
     text-decoration: none;
@@ -124,7 +125,7 @@ a.btn {
     transition-duration: 0.3s;
 }
 
-a.btn:hover {
+.btn:hover {
     background: var(--color-semi-white);
     color: var(--color-dark);
 }
@@ -142,36 +143,47 @@ body {
     min-width: 400px;
 }
 
-#cart {
-    position: relative;
-    display: none;
+
+form {
+    margin-top: 20px;
 }
 
-#cart.show {
+input, select, textarea {
+    box-sizing: border-box;
     display: block;
-}
-
-#cart > svg {
-    width: 40px;
+    width: 100%;
     height: 40px;
-    margin-right: 50px;
-    cursor: pointer;
-    fill: var(--color-orange);
+    padding: 15px;
+    font-family: Montserrat;
+    font-size: var(--font-1);
+    color: var(--color-dark);
+    background-clip: padding-box;
+    border: 1px solid var(--color-orange);
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-#cart::after {
-    cursor: pointer;
-    position: absolute;
-    top:-10px;
-    left:20px;
-    min-width: 25px;
-    content: attr(data-content);
-    color: var(--color-dark);
-    font-weight: bold;
-    text-align: center;
-    padding: 3px;
-    border-radius: 100px;
+input:focus, select:focus, textarea:focus  {
     background: var(--color-white);
+    outline: none;
+    border: var(--color-dark) solid 1px;
+}
+
+textarea {
+    resize : none;
+    overflow : auto;
+    height: 180px;
+}
+
+select {
+    padding: 0 40px 0 15px;
+    appearance: none;
+    background: var(--color-white);
+}
+
+label {
+    display: block;
+    margin: 15px 0 2px 0;
 }
 
 .error {
@@ -434,6 +446,41 @@ header {
     background: var(--color-dark);
     position: relative;
     justify-content: space-between;
+}
+
+#cart {
+    position: relative;
+    opacity: 0;
+    transition-duration: 0.3s;
+    margin-top: -100px;
+}
+
+#cart.show {
+    margin-top: 0px;
+    opacity: 1;
+}
+
+#cart > svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    cursor: pointer;
+    fill: var(--color-orange);
+}
+
+#cart::after {
+    cursor: pointer;
+    position: absolute;
+    top:-10px;
+    left:20px;
+    min-width: 25px;
+    content: attr(data-content);
+    color: var(--color-dark);
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    border-radius: 100px;
+    background: var(--color-white);
 }
 
 .logo {
@@ -853,9 +900,8 @@ div.sim-slider-arrow-right {
 
 }
 
-.souvenir-block:hover:before {
+.souvenir-block-btn {
     position: absolute;
-    content: 'Більше';
     cursor: pointer;
     top:50%;
     left:50%;
@@ -867,6 +913,13 @@ div.sim-slider-arrow-right {
     display: block;
     color: var(--color-white);
     margin: auto;
+    opacity: 0;
+    transition-duration: 0.3s;
+    text-decoration: 0;
+}
+
+.souvenir-block-btn:hover {
+    opacity: 1;
 }
 
 .souvenir-images > div > a > img {
@@ -1832,6 +1885,7 @@ footer {
     position: relative;
     z-index: 2;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .souvenir-self-head-desc {
@@ -1903,3 +1957,214 @@ footer {
     }
 }
 /****************** SOUVENIRS ITEM END ***************************************************************/
+/****************** CART START ***************************************************************/
+.cart-container {
+    background: var(--color-white);
+    padding: 30px 50px;
+    color: var(--color-dark);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-title {
+    font-weight: bold;
+    font-size: var(--font-3);
+    text-align: center;
+}
+
+.cart-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-right-body {
+    padding: 10px 0 0 15px;
+}
+
+.cart-block-title {
+    margin-top: 25px;
+}
+
+.cart-block-title {
+    font-weight: bold;
+}
+
+.cart-block-title > span {
+    color: var(--color-orange);
+}
+
+.select {
+    position: relative;
+}
+
+.cart-select {
+    max-width: 460px;
+    width: 460px;
+}
+
+.select::after {
+    display: block;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 15px;
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" class="select" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/></svg>');
+}
+
+.cart-approve-order {
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+.cart-order {
+    margin-top: 20px;
+    background: var(--color-semi-white);
+    padding: 20px;
+    display: none;
+}
+
+.cart-order-block-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: var(--font-2);
+}
+
+.cart-order-title {
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.cart-total-price {
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart-order-body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.cart-order-img {
+    position: relative;
+}
+
+.cart-order-remove {
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-white);
+    background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path></svg>');
+    color: var(--color-dark);
+}
+
+.cart-order-img > img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    border: 3px solid var(--color-white);
+    border-radius: 5px;
+}
+
+.cart-order-desc {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.cart-order-count-min, .cart-order-count-plus {
+    display: inline-block;
+    font-style: normal;
+    border-radius: 50px;
+    border: 3px solid var(--color-dark);
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.cart-order-count-min {
+    margin-left: 0;
+}
+
+.cart-order-count-plus {
+    margin-right: 0;
+}
+
+.cart-order-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-order-price {
+    text-align: center;
+}
+
+.cart-order-count {
+    font-weight: bold;
+    margin: 0 auto;
+    min-width: 155px;
+}
+
+.cart-order-title > a {
+    text-decoration: none;
+    color:var(--color-dark);
+}
+
+@media (max-width: 860px) {
+    .cart-order-body {
+        flex-direction: column;
+    }
+
+    .cart-order-img {
+        text-align: center;
+        width: max-content;
+        margin: 10px auto;
+    }
+
+    .cart-body {
+        flex-direction: column;
+    }
+
+    .cart-right-body {
+        padding: 0;
+    }
+
+    .cart-container {
+        padding: 10px 20px;
+    }
+
+    .cart-select {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .cart-order-desc {
+        margin-bottom: 5px;
+    }
+
+    .cart-order-block-title, .cart-order-title, .cart-order-desc {
+        text-align: center;
+    }
+
+    .cart-order-title {
+        margin: 0 auto;
+    }
+}
+/****************** CART END ***************************************************************/

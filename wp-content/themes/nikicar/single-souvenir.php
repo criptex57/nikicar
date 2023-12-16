@@ -1,6 +1,11 @@
 <?=get_header()?>
 <?php $post = get_post();?>
-<div class="souvenir-self" id="souvenir-item" data-post-id="<?=$post->ID?>">
+<div class="souvenir-self" id="souvenir-item"
+     data-post-id="<?=$post->ID?>"
+     data-post-title="<?=$post->post_title?>"
+     data-post-slug="<?=$post->post_name?>"
+     data-post-image="<?=get_the_post_thumbnail_url($post->ID)?>"
+     data-post-price="<?=CFS()->get('souvenir-single-price')?>">
     <div class="souvenir-self-head-title"><?=$post->post_title?></div>
     <div class="souvenir-self-container">
         <div class="souvenir-self-head">

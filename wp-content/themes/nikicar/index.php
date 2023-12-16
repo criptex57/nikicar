@@ -32,6 +32,7 @@
   <div class="souvenir-images">
     <?php foreach (get_posts('post_type=souvenir&orderby=rand&numberposts=4') as $souvenir):?>
         <div class="souvenir-block">
+            <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>" class="souvenir-block-btn">Більше</a>
             <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>">
                 <img src="<?=get_the_post_thumbnail_url($souvenir->ID)?>" alt="">
             </a>
