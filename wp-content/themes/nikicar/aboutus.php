@@ -3,7 +3,7 @@
 <div class="about-us-first-block-container">
     <div class="about-us-first-block-container-top">
         <div class="about-us-first-block-description">
-            <p><?=CFS()->get('aboutus-title')?></p>
+            <h1><?=CFS()->get('aboutus-title')?></h1>
             <div class="about-us-first-block-text">
                 <?=CFS()->get('aboutus-desc')?>
             </div>
@@ -21,7 +21,7 @@
                     <img src="<?=$image['aboutus-typeactivity-image']?>" alt="">
                 </div>
                 <div class="about-us-first-block-icons-text">
-                    <div><?=$image['aboutus-typeactivity-title']?></div>
+                    <h3><?=$image['aboutus-typeactivity-title']?></h3>
                     <p><?=$image['aboutus-typeactivity-desc']?></p>
                 </div>
             </div>
@@ -29,7 +29,7 @@
     </div>
 </div>
 <div class="about-us-members">
-    <p>НАШІ АКТИВІСТИ</p>
+    <h2>НАШІ АКТИВІСТИ</h2>
     <div class="about-us-members-container">
       <?php foreach (CFS()->get('volunteers') as $key => $image) { ?>
           <div class="about-us-members-item">

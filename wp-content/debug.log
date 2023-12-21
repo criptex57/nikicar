@@ -1,0 +1,708 @@
+[17-Dec-2023 11:11:58 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NU' at line 15 for query CREATE TABLE wp_nikicar_orders (
+		  id mediumint(9) NOT NULL AUTO_INCREMENT,
+		  time DATETIME NOT NULL,
+		  firstname tinytext NOT NULL,
+		  lastname tinytext NOT NULL,
+		  surname tinytext NOT NULL,
+		  phone tinytext NOT NULL,
+		  area tinytext NOT NULL,
+		  region tinytext NOT NULL,
+		  settlements tinytext NOT NULL,
+		  warehouses tinytext NOT NULL,
+		  price tinytext NOT NULL,
+		  userOrder text NOT NULL,
+		  comment text NOT NULL,
+		  order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NULL,
+		  UNIQUE KEY id (id)
+		) made by activate_plugin, do_action('activate_nikicar-order/nikicar-order.php'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, dbDelta
+[17-Dec-2023 11:13:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NU' at line 14 for query CREATE TABLE wp_nikicar_orders (id mediumint(9) NOT NULL AUTO_INCREMENT,
+		  time DATETIME NOT NULL,
+		  firstname tinytext NOT NULL,
+		  lastname tinytext NOT NULL,
+		  surname tinytext NOT NULL,
+		  phone tinytext NOT NULL,
+		  area tinytext NOT NULL,
+		  region tinytext NOT NULL,
+		  settlements tinytext NOT NULL,
+		  warehouses tinytext NOT NULL,
+		  price tinytext NOT NULL,
+		  userOrder text NOT NULL,
+		  comment text NOT NULL,
+		  order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NULL,
+		  UNIQUE KEY id (id)
+		) made by activate_plugin, do_action('activate_nikicar-order/nikicar-order.php'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, dbDelta
+[17-Dec-2023 11:14:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NU' at line 14 for query CREATE TABLE wp_nikicar_orders (id mediumint(9) NOT NULL AUTO_INCREMENT,
+		  time DATETIME NOT NULL,
+		  firstname tinytext NOT NULL,
+		  lastname tinytext NOT NULL,
+		  surname tinytext NOT NULL,
+		  phone tinytext NOT NULL,
+		  area tinytext NOT NULL,
+		  region tinytext NOT NULL,
+		  settlements tinytext NOT NULL,
+		  warehouses tinytext NOT NULL,
+		  price tinytext NOT NULL,
+		  userOrder text NOT NULL,
+		  comment text NOT NULL,
+		  order text NOT NULL,
+	      userIp tinytext NOT NULL,
+		  status int(1) NOT NULL,
+		  UNIQUE KEY id (id)
+		) made by activate_plugin, do_action('activate_nikicar-order/nikicar-order.php'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, dbDelta
+[17-Dec-2023 11:26:02 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:13
+Stack trace:
+#0 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/niki-car/wp-admin/includes/menu.php(161): do_action()
+#4 /var/www/niki-car/wp-admin/menu.php(417): require_once('/var/www/niki-c...')
+#5 /var/www/niki-car/wp-admin/admin.php(158): require('/var/www/niki-c...')
+#6 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 13
+[17-Dec-2023 11:43:05 UTC] PHP Notice:  Undefined variable: orders in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/approve.php on line 3
+[17-Dec-2023 11:43:05 UTC] PHP Notice:  Undefined variable: orders in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/approve.php on line 20
+[17-Dec-2023 11:43:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/approve.php on line 20
+[17-Dec-2023 11:43:05 UTC] PHP Notice:  Undefined variable: orders in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/archive.php on line 3
+[17-Dec-2023 11:43:05 UTC] PHP Notice:  Undefined variable: orders in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/archive.php on line 20
+[17-Dec-2023 11:43:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/archive.php on line 20
+[17-Dec-2023 12:03:04 UTC] PHP Parse error:  syntax error, unexpected '$orderProducts' (T_VARIABLE), expecting '(' in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 46
+[17-Dec-2023 12:07:33 UTC] PHP Notice:  Undefined index: variantImageSrc in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 48
+[17-Dec-2023 12:07:33 UTC] PHP Notice:  Undefined index: variantDesc in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 49
+[17-Dec-2023 14:52:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method NikicarOrder::getNewOrders() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:18
+Stack trace:
+#0 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/niki-car/wp-admin/includes/menu.php(161): do_action()
+#4 /var/www/niki-car/wp-admin/menu.php(417): require_once('/var/www/niki-c...')
+#5 /var/www/niki-car/wp-admin/admin.php(158): require('/var/www/niki-c...')
+#6 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 18
+[17-Dec-2023 14:52:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method NikicarOrder::getNewOrders() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:18
+Stack trace:
+#0 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/niki-car/wp-admin/includes/menu.php(161): do_action()
+#4 /var/www/niki-car/wp-admin/menu.php(417): require_once('/var/www/niki-c...')
+#5 /var/www/niki-car/wp-admin/admin.php(158): require('/var/www/niki-c...')
+#6 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 18
+[17-Dec-2023 16:16:28 UTC] PHP Notice:  Undefined index: current_screen in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 16:22:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87) in /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php on line 1794
+[17-Dec-2023 16:22:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87) in /var/www/niki-car/wp-includes/rest-api.php on line 749
+[17-Dec-2023 16:22:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87) in /var/www/niki-car/wp-includes/rest-api.php on line 750
+[17-Dec-2023 16:22:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87) in /var/www/niki-car/wp-includes/rest-api.php on line 751
+[17-Dec-2023 16:22:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87) in /var/www/niki-car/wp-includes/rest-api.php on line 752
+[17-Dec-2023 16:23:48 UTC] PHP Parse error:  syntax error, unexpected 'success' (T_STRING) in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 89
+[17-Dec-2023 16:29:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:16
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(107): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-blog-header.php(13): require_once('/var/www/niki-c...')
+#4 /var/www/niki-car/index.php(17): require('/var/www/niki-c...')
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 16
+[17-Dec-2023 16:30:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:16
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(107): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-admin/admin-ajax.php(22): require_once('/var/www/niki-c...')
+#4 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 16
+[17-Dec-2023 16:31:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:16
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(107): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-admin/admin-ajax.php(22): require_once('/var/www/niki-c...')
+#4 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 16
+[17-Dec-2023 16:31:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:16
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(107): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-blog-header.php(13): require_once('/var/www/niki-c...')
+#4 /var/www/niki-car/index.php(17): require('/var/www/niki-c...')
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 16
+[17-Dec-2023 16:32:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_current_user() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:16
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(107): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-blog-header.php(13): require_once('/var/www/niki-c...')
+#4 /var/www/niki-car/index.php(17): require('/var/www/niki-c...')
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 16
+[17-Dec-2023 16:51:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order-func.php on line 33
+[17-Dec-2023 16:53:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order-func.php on line 33
+[17-Dec-2023 16:57:43 UTC] WordPress database error Unknown column '1' in 'field list' for query UPDATE `wp_nikicar_orders` SET `status` = `1` WHERE `wp_nikicar_orders`.`id` = 1; made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, {closure}, NikicarOrder::approveOrder
+[17-Dec-2023 17:07:43 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:101
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11  in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 101
+[17-Dec-2023 17:08:43 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:101
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11  in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 101
+[17-Dec-2023 17:09:29 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:10:58 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:13:28 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:13:59 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:15:22 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:15:48 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:16:11 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:16:38 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:87
+Stack trace:
+#0 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#3 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#4 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#7 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#8 /var/www/niki-car/wp-includes/class-wp.php(813): WP->parse_request()
+#9 /var/www/niki-car/wp-includes/functions.php(1336): WP->main()
+#10 /var/www/niki-car/wp-blog-header.php(16): wp()
+#11 / in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 87
+[17-Dec-2023 17:25:34 UTC] PHP Notice:  Constant CFS_URL already defined in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 11
+[17-Dec-2023 17:25:34 UTC] PHP Notice:  Constant CFS_URL already defined in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 11
+[17-Dec-2023 17:25:34 UTC] PHP Notice:  Constant CFS_URL already defined in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 11
+[17-Dec-2023 18:49:26 UTC] PHP Fatal error:  Cannot redeclare NikicarBotClass::sendMessage() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 18:49:27 UTC] PHP Fatal error:  Cannot redeclare NikicarBotClass::sendMessage() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 18:49:28 UTC] PHP Fatal error:  Cannot redeclare NikicarBotClass::sendMessage() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 18:49:28 UTC] PHP Fatal error:  Cannot redeclare NikicarBotClass::sendMessage() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 18:49:29 UTC] PHP Fatal error:  Cannot redeclare NikicarBotClass::sendMessage() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 19:02:40 UTC] PHP Parse error:  syntax error, unexpected 'Content' (T_STRING), expecting ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:02:40 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:02:40 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:03 UTC] PHP Parse error:  syntax error, unexpected ''Content-type: application/jso' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:03:03 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:03 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:05 UTC] PHP Parse error:  syntax error, unexpected ''Content-type: application/jso' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:03:05 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:05 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:06 UTC] PHP Parse error:  syntax error, unexpected ''Content-type: application/jso' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:03:06 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:06 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:09 UTC] PHP Parse error:  syntax error, unexpected ''Content-type: application/jso' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:03:09 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:03:09 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:12:21 UTC] PHP Parse error:  syntax error, unexpected '"' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:14:22 UTC] PHP Parse error:  syntax error, unexpected '"' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:15:48 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:15:54 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:16:53 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:18:03 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:18:25 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:19:03 UTC] PHP Notice:  Undefined index: firstname in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: phone in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: area in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 10
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: region in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: settlements in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 12
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: warehouses in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 13
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: userIp in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 14
+[17-Dec-2023 19:19:04 UTC] PHP Notice:  Undefined index: comment in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 15
+[17-Dec-2023 19:28:50 UTC] PHP Notice:  Array to string conversion in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 9
+[17-Dec-2023 19:34:50 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:36:51 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:38:52 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:40:53 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:41:05 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:41:05 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:41:05 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[17-Dec-2023 19:42:54 UTC] PHP Parse error:  syntax error, unexpected '$o' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 23
+[17-Dec-2023 19:43:45 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:43:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 28
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 31
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 32
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 33
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 34
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 35
+[17-Dec-2023 19:43:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 36
+[17-Dec-2023 19:44:27 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 8
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:44:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 11
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 28
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 29
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 30
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 31
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 32
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 33
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 34
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 35
+[17-Dec-2023 19:44:27 UTC] PHP Notice:  Trying to access array offset on value of type null in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 36
+[17-Dec-2023 20:35:17 UTC] PHP Parse error:  syntax error, unexpected ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 48
+[17-Dec-2023 20:35:21 UTC] PHP Parse error:  syntax error, unexpected ']' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 48
+[17-Dec-2023 20:52:29 UTC] PHP Parse error:  syntax error, unexpected '$params' (T_VARIABLE) in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 46
+[17-Dec-2023 21:02:31 UTC] PHP Warning:  openssl_encrypt(): IV passed is 20 bytes long which is longer than the 16 expected by selected cipher, truncating in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 83
+[17-Dec-2023 21:02:31 UTC] PHP Warning:  openssl_decrypt(): IV passed is 20 bytes long which is longer than the 16 expected by selected cipher, truncating in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 86
+[17-Dec-2023 21:02:39 UTC] PHP Warning:  openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 83
+[17-Dec-2023 21:02:39 UTC] PHP Warning:  openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0 in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 86
+[18-Dec-2023 07:03:30 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 704
+[18-Dec-2023 07:03:30 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 715
+[18-Dec-2023 07:03:30 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 718
+[18-Dec-2023 07:03:31 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 704
+[18-Dec-2023 07:03:31 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 715
+[18-Dec-2023 07:03:31 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 718
+[18-Dec-2023 07:03:44 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 704
+[18-Dec-2023 07:03:44 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 715
+[18-Dec-2023 07:03:44 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 718
+[18-Dec-2023 10:00:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 70
+[18-Dec-2023 10:02:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 70
+[18-Dec-2023 10:04:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/NikicarBotClass.php on line 70
+[18-Dec-2023 10:24:42 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-bot/v1/test відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:24:42 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-order/v1/addOrder відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:24:51 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-bot/v1/test відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:24:51 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-order/v1/addOrder відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:24:55 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-bot/v1/test відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:24:55 UTC] PHP Notice:  Function register_rest_route was called incorrectly. У визначенні маршруту REST API для nikicar-order/v1/addOrder відсутній обов'язковий аргумент permission_callback. Для загальнодоступних маршрутів REST API використовуйте __return_true для вирішення зворотного виклику. Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 5.5.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:28:56 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:20 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:50 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:30:52 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:31:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 12
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:33:39 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:35:38 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 146
+[18-Dec-2023 10:39:49 UTC] PHP Notice:  String offset cast occurred in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:41:39 UTC] PHP Parse error:  syntax error, unexpected 'for' (T_FOR) in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 145
+[18-Dec-2023 10:44:36 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:36 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:36 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:36 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 144
+[18-Dec-2023 10:44:36 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:37 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:37 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:37 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:37 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 144
+[18-Dec-2023 10:44:37 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:45 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:45 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:45 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:44:45 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 144
+[18-Dec-2023 10:44:45 UTC] PHP Notice:  Undefined variable: middle in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:45:20 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:45:20 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:45:28 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/niki-car/wp-content/themes/nikicar/functions.php on line 143
+[18-Dec-2023 10:45:45 UTC] PHP Fatal error:  Uncaught Error: Class 'NikicarOrder' not found in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php:10
+Stack trace:
+#0 /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php(29): require_once()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#2 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/niki-car/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 10
+[18-Dec-2023 10:46:20 UTC] PHP Fatal error:  Uncaught Error: Class 'NikicarOrder' not found in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php:10
+Stack trace:
+#0 /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php(29): require_once()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#2 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/niki-car/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 10
+[18-Dec-2023 10:46:22 UTC] PHP Fatal error:  Uncaught Error: Class 'NikicarOrder' not found in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php:10
+Stack trace:
+#0 /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php(29): require_once()
+#1 /var/www/niki-car/wp-includes/class-wp-hook.php(324): {closure}()
+#2 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /var/www/niki-car/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /var/www/niki-car/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/templates/admin.php on line 10
+[18-Dec-2023 10:55:57 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  0 made by require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:55:57 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  1 made by require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:55:57 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  0 made by do_action('toplevel_page_order_new'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:56:00 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  0 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:56:00 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  1 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:56:09 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  0 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 10:56:09 UTC] WordPress database error Table 'niki-car.space.wp_nikicar_orders' doesn't exist for query  SELECT * FROM wp_nikicar_orders WHERE status =  1 made by require_once('wp-admin/admin.php'), require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, {closure}, NikicarOrderDb::getOrders
+[18-Dec-2023 11:02:20 UTC] PHP Parse error:  syntax error, unexpected 'static' (T_STATIC), expecting '(' in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 19
+[18-Dec-2023 11:08:23 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 21
+[18-Dec-2023 11:16:51 UTC] PHP Notice:  Undefined index: id in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 18
+[18-Dec-2023 11:16:51 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 for query  SELECT * FROM wp_nikicar_orders WHERE id =   made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, {closure}, NikicarBotClass::approveOrderMessage, NikicarOrderDb::getOrderById
+[18-Dec-2023 11:33:48 UTC] PHP Fatal error:  Cannot redefine class constant NikicarOrderDb::ORDER_STATUS_CLOSE in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarOrderDb.php on line 6
+[18-Dec-2023 16:17:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[19-Dec-2023 11:29:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 26
+[19-Dec-2023 11:29:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 35
+[19-Dec-2023 11:31:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 26
+[19-Dec-2023 11:31:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 35
+[19-Dec-2023 11:32:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 26
+[19-Dec-2023 11:32:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 35
+[19-Dec-2023 11:32:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 26
+[19-Dec-2023 11:32:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/single-help.php on line 35
+[19-Dec-2023 14:18:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[19-Dec-2023 15:20:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[19-Dec-2023 16:10:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[19-Dec-2023 18:53:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[20-Dec-2023 06:01:36 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 704
+[20-Dec-2023 06:01:36 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 715
+[20-Dec-2023 06:01:36 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 718
+[20-Dec-2023 06:01:43 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 704
+[20-Dec-2023 06:01:43 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 715
+[20-Dec-2023 06:01:43 UTC] PHP Notice:  Undefined index: host in /var/www/niki-car/wp-includes/canonical.php on line 718
+[20-Dec-2023 07:58:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[20-Dec-2023 10:02:14 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:02:24 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:02:30 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:02:36 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:03:45 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:04:23 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:04:48 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:06:11 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 10:52:33 UTC] Cron reschedule event error for hook: wpseo_indexable_index_batch, Error code: invalid_schedule, Error message: Планувальник подій не існує., Data: {"schedule":"fifteen_minutes","args":[],"interval":900}
+[20-Dec-2023 10:59:31 UTC] PHP Notice:  Function wpdb::prepare was called incorrectly. Запит не містить правильної кількості заповнювачів (1) для кількості переданих аргументів (3). Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 4.8.3.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include_once(/wp-content/plugins/cache/wp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cache/wp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include(/wp-content/plugins/cache/wp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/cache/wp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include_once(/wp-content/plugins/cache/ossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:11:36 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cache/ossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include_once(/wp-content/plugins/cache/wp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cache/wp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include(/wp-content/plugins/cache/wp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/cache/wp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include_once(/wp-content/plugins/cache/ossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:12:37 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cache/ossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include_once(/wp-content/plugins/cachewp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cachewp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include(/wp-content/plugins/cachewp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/cachewp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include_once(/wp-content/plugins/cacheossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:12:42 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/cacheossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/wp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include(/wp-content/plugins/wp-super-cache/wp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/ossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:26 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/ossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/wp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include(/wp-content/plugins/wp-super-cache/wp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/ossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:33 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/ossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/wp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include(/wp-content/plugins/wp-super-cache/wp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/wp-super-cache/wp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cache/ossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:13:39 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cache/ossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cachewp-cache-phase1.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cachewp-cache-phase1.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/advanced-cache.php on line 22
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include(/wp-content/plugins/wp-super-cachewp-cache-base.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include(): Failed opening '/wp-content/plugins/wp-super-cachewp-cache-base.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 115
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include_once(/wp-content/plugins/wp-super-cacheossdl-cdn.php): failed to open stream: No such file or directory in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 14:14:10 UTC] PHP Warning:  include_once(): Failed opening '/wp-content/plugins/wp-super-cacheossdl-cdn.php' for inclusion (include_path='.:/usr/share/php') in /var/www/niki-car/wp-content/plugins/wp-super-cache/wp-cache.php on line 152
+[20-Dec-2023 18:12:35 UTC] PHP Warning:  print_r() expects at least 1 parameter, 0 given in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarApiRouts.php on line 12
+[20-Dec-2023 18:46:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 171
+[20-Dec-2023 18:46:49 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 18:46:49 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[20-Dec-2023 18:58:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[20-Dec-2023 19:01:43 UTC] PHP Parse error:  syntax error, unexpected 'data' (T_STRING) in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarApiRouts.php on line 11
+[20-Dec-2023 19:16:28 UTC] PHP Notice:  Array to string conversion in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarApiRouts.php on line 22
+[20-Dec-2023 20:59:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[20-Dec-2023 20:59:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /var/www/niki-car/wp-content/themes/nikicar/index.php on line 4
+[21-Dec-2023 11:46:32 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, string given in /var/www/niki-car/wp-includes/class-wp-query.php on line 2204
+[21-Dec-2023 11:46:32 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/niki-car/wp-includes/class-wp-query.php on line 2204
+[21-Dec-2023 11:46:32 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND wp_posts.post_type = 'report' AND ((wp_posts.post_status = 'publish'))
+			' at line 3 for query 
+					SELECT   wp_posts.ID
+					FROM wp_posts 
+					WHERE 1=1  AND wp_posts.ID NOT IN () AND wp_posts.post_type = 'report' AND ((wp_posts.post_status = 'publish'))
+					
+					ORDER BY RAND()
+					LIMIT 0, 3
+				 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/nikicar/single-report.php'), get_posts, WP_Query->query, WP_Query->get_posts
+[21-Dec-2023 17:06:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method NikicarBotClass::sendRequest() in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php:25
+Stack trace:
+#0 /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarApiRouts.php(7): NikicarBotClass::getSmsBalance()
+#1 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1193): {closure}()
+#2 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(1041): WP_REST_Server->respond_to_request()
+#3 /var/www/niki-car/wp-includes/rest-api/class-wp-rest-server.php(431): WP_REST_Server->dispatch()
+#4 /var/www/niki-car/wp-includes/rest-api.php(424): WP_REST_Server->serve_request()
+#5 /var/www/niki-car/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#6 /var/www/niki-car/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/niki-car/wp-includes/plugin.php(565): WP_Hook->do_action()
+#8 /var/www/niki-car/wp-includes/class-wp.php(418): do_action_ref_array()
+#9 /var/www/niki-car/wp-includes/class-wp.php(813): WP- in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 25
+[21-Dec-2023 18:31:01 UTC] PHP Parse error:  syntax error, unexpected 'add_option' (T_STRING) in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 16
+[21-Dec-2023 18:31:02 UTC] PHP Parse error:  syntax error, unexpected 'add_option' (T_STRING) in /var/www/niki-car/wp-content/plugins/nikicar-order/includes/NikicarBot.php on line 16
+[21-Dec-2023 18:31:02 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[21-Dec-2023 18:31:02 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[21-Dec-2023 18:51:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function settings_fields() in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php:101
+Stack trace:
+#0 /var/www/niki-car/wp-settings.php(473): include_once()
+#1 /var/www/niki-car/wp-config.php(111): require_once('/var/www/niki-c...')
+#2 /var/www/niki-car/wp-load.php(50): require_once('/var/www/niki-c...')
+#3 /var/www/niki-car/wp-admin/admin.php(34): require_once('/var/www/niki-c...')
+#4 /var/www/niki-car/wp-admin/options.php(19): require_once('/var/www/niki-c...')
+#5 {main}
+  thrown in /var/www/niki-car/wp-content/plugins/nikicar-order/nikicar-order.php on line 101
+[21-Dec-2023 18:51:18 UTC] PHP Notice:  Function is_embed was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031
+[21-Dec-2023 18:51:18 UTC] PHP Notice:  Function is_search was called incorrectly. Умовні теґи запитів не працюють до здійснення запиту. До того, вони завжди повертають "false". Будь ласка, перегляньте <a>Виправлення помилок у WordPress</a> для більш детальної інформації. (Це повідомлення додане у версії 3.1.0.) in /var/www/niki-car/wp-includes/functions.php on line 6031

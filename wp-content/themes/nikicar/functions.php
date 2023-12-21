@@ -1,4 +1,13 @@
 <?php
+// выключаем стили gutenberg на frontend
+function wpcoua_disable_gutenberg_styles() {
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+}
+
+add_filter('wp_enqueue_scripts', 'wpcoua_disable_gutenberg_styles', 100);
+
+
 add_action('wp_enqueue_scripts', 'add_script_and_style');
 
 function add_script_and_style(){ //Подключение скриптов и стилей
@@ -140,7 +149,9 @@ function register_post_souvenir(){
 //flush_rewrite_rules(); //@todo Обновляет правила перезаписи ЧПУ. Запускать при добавлении новых типов записи
 
 function wordSafeBreak($str) {
-  for($middle = floor(strlen($str)/2); $middle >= 0 && $str[$middle] !== ' '; $middle--){
+  $middle = floor(strlen($str)/2);
+
+  for($middle; $middle >= 0 && isset($str[$middle]) && substr($str, $middle, 1) !== ' '; $middle--){
     if ($middle < 0) {
       return [$str];
     }

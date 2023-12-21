@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(addToCartElement){
         addToCartElement.addEventListener('click', (e) => {
             e.preventDefault();
-            let souvenirImages = document.getElementsByClassName("lightbox-self-image");
+            let souvenirImages = document.getElementsByClassName("souvenir-self-head-vari-item");
 
             if(souvenirImages.length > 1 && !checkedSouvenirVariant){
                 showModal('Помилка', 'Спочатку виберіть варіант сувеніра');
@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
             else {
                 let souvenirItem = document.getElementById('souvenir-item');
                 if(!checkedSouvenirVariant && souvenirItem){
-
                     checkedSouvenirVariant = {
                         souvenirId:souvenirItem.getAttribute('data-post-id'),
                         slug:souvenirItem.getAttribute('data-post-slug'),

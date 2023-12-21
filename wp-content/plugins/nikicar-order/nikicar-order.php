@@ -7,104 +7,91 @@ Version: 1.0
 Author: criptex57
 Author URI: https://niki-car.space/
 */
-require_once "nikicar-order-func.php";
-require_once ABSPATH . 'wp-admin/includes/upgrade.php';
-global $wpdb;
-$order = new NikicarOrder($wpdb);
+require_once "includes/NikicarOrderDb.php";
+require_once "includes/NikicarBot.php";
+require_once "includes/NikicarApiRouts.php";
+define( 'NIKICAR_PLUGIN_URL', plugins_url( '', __FILE__ ));
+
+register_activation_hook(__FILE__, function() {
+	NikicarOrderDb::checkTable();
+});
+
 add_action( 'admin_menu', function(){
-	global $wpdb;
-	$countOrder = NikicarOrder::getNewOrderCount($wpdb);
+	$countOrder = count(NikicarOrderDb::getOrders());
 	add_menu_page(
 		'Замовлення',
 		$countOrder>0?"Замовлення <span class=\"awaiting-mod\">$countOrder</span>":'Замовлення',
 		'edit_others_posts',
-		'order_settings',
-		'order_settings',
+		'order_new',
+		function(){
+			$page = NikicarOrderDb::ORDER_STATUS_NEW;
+			$orders = NikicarOrderDb::getOrders($page);
+			require_once 'templates/admin.php';
+		},
 		'dashicons-money-alt',
 		5
 	);
-});
 
-add_action( 'admin_menu', function(){
+	$countOrder = count(NikicarOrderDb::getOrders(NikicarOrderDb::ORDER_STATUS_APPROVE));
 	add_submenu_page(
-		'order_settings',
-		'Настройки', // тайтл страницы
-		'Настройки', // текст ссылки в меню
-		'manage_options', // права пользователя, необходимые для доступа к странице
-		'order_settings_sub', // ярлык страницы
-		'order_settings_sub' // функция, которая выводит содержимое страницы
+		'order_new',
+		'Прийняті',
+		$countOrder>0?"Прийняті <span class=\"awaiting-mod\">$countOrder</span>":'Прийняті',
+		'manage_options',
+		'order_approve',
+		function(){
+			$page = NikicarOrderDb::ORDER_STATUS_APPROVE;
+			$orders = NikicarOrderDb::getOrders($page);
+			require_once 'templates/admin.php';
+		}
 	);
-}, 25 );
 
-register_activation_hook(__FILE__, function() {
-	global $wpdb;
-	$table_name = $wpdb->get_blog_prefix() . NikicarOrder::$table;
+	$countOrder = count(NikicarOrderDb::getOrders(NikicarOrderDb::ORDER_STATUS_PAID));
+	add_submenu_page(
+		'order_new',
+		'Оплачені',
+		$countOrder>0?"Оплачені <span class=\"awaiting-mod\">$countOrder</span>":'Оплачені',
+		'manage_options',
+		'order_paid',
+		function(){
+			$page = NikicarOrderDb::ORDER_STATUS_PAID;
+			$orders = NikicarOrderDb::getOrders($page);
+			require_once 'templates/admin.php';
+		}
+	);
 
-	if($wpdb->get_var("show tables like '$table_name'") != $table_name) {
-		$sql = "CREATE TABLE {$table_name} (
-		  id mediumint(9) NOT NULL AUTO_INCREMENT,
-		  time DATETIME NOT NULL,
-		  firstname tinytext NOT NULL,
-		  lastname tinytext NOT NULL,
-		  surname tinytext NOT NULL,
-		  phone tinytext NOT NULL,
-		  area tinytext NOT NULL,
-		  region tinytext NOT NULL,
-		  settlements tinytext NOT NULL,
-		  warehouses tinytext NOT NULL,
-		  price tinytext NOT NULL,
-		  userOrder text NOT NULL,
-		  comment text NOT NULL,
-		  order text NOT NULL,
-	      userIp tinytext NOT NULL,
-		  status int(1) NOT NULL,
-		  UNIQUE KEY id (id)
-		);";
+	add_submenu_page(
+		'order_new',
+		'Архівні',
+		'Архівні',
+		'manage_options',
+		'order_archive',
+		function(){
+			$page = NikicarOrderDb::ORDER_STATUS_CLOSE;
+			$orders = NikicarOrderDb::getOrders($page);
+			require_once 'templates/admin.php';
+		}
+	);
 
-		dbDelta($sql);
-	}
+	add_submenu_page(
+		'order_new',
+		'Настройки',
+		'Настройки',
+		'manage_options',
+		'order_settings',
+		function(){
+			require_once 'templates/settings.php';
+		}
+	);
 });
 
-function order_settings_sub(){
-	echo 'У розробці';
-}
-
-function order_settings(){
-	echo 'У розробці';
-}
-
-add_action( 'rest_api_init', function(){
-	register_rest_route( 'nikicar-order/v1', '/addOrder', array( //https://niki-car.space/wp-json/nikicar-order/v1/addOrder
-		array(
-			'methods'  => 'POST',
-			'callback' => function(WP_REST_Request $request){
-				$params = json_decode(file_get_contents('php://input'), true);
-				global $wpdb;
-				$order = new NikicarOrder($wpdb);
-				$order->addOrder($params);
-				echo '{"success":"true", "data":[1,2,3]}';
-			},
-		),
-//		array(
-//			'methods'  => 'POST',
-//			'callback' => 'my_awesome_func_two',
-//			'args'     => array(
-//				'arg_str' => array(
-//					'type'     => 'string', // значение параметра должно быть строкой
-//					'required' => true,     // параметр обязательный
-//				),
-//				'arg_int' => array(
-//					'type'    => 'integer', // значение параметра должно быть числом
-//					'default' => 10,        // значение по умолчанию = 10
-//				),
-//			),
-//			'permission_callback' => function( $request ){
-//				// только авторизованный юзер имеет доступ к эндпоинту
-//				return is_user_logged_in();
-//			},
-//			// или в данном случае можно записать проще
-//			'permission_callback' => 'is_user_logged_in',
-//		)
-	) );
-
-} );
+add_action( 'admin_init', function(){
+	register_setting( 'nikicar_plugin_settings', 'telegram_bot' );
+	register_setting( 'nikicar_plugin_settings', 'telegram_channel_id' );
+	register_setting( 'nikicar_plugin_settings', 'encrypt_key' );
+	register_setting( 'nikicar_plugin_settings', 'sms_service_token' );
+	register_setting( 'nikicar_plugin_settings', 'sms_service_sender' );
+	register_setting( 'nikicar_plugin_settings', 'sms_service_min_notify_balance' );
+	register_setting( 'nikicar_plugin_settings', 'sms_text' );
+	register_setting( 'nikicar_plugin_settings', 'sms_enabled' );
+});

@@ -6,7 +6,7 @@
      data-post-slug="<?=$post->post_name?>"
      data-post-image="<?=get_the_post_thumbnail_url($post->ID)?>"
      data-post-price="<?=CFS()->get('souvenir-single-price')?>">
-    <div class="souvenir-self-head-title"><?=$post->post_title?></div>
+    <h1 class="souvenir-self-head-title"><?=$post->post_title?></h1>
     <div class="souvenir-self-container">
         <div class="souvenir-self-head">
             <div class="souvenir-self-head-images">
@@ -40,6 +40,18 @@
                 <a class="btn souvenir-self-head-by" href="#" id="add-to-cart">ДОДАТИ У КОШИК</a>
             </div>
         </div>
+    </div>
+    <h2 class="souvenir-single-h2">Розгляньте також:</h2>
+    <div class="souvenir-images single">
+
+		<?php foreach (get_posts(['post_type' => 'souvenir', 'orderby' => 'rand', 'numberposts' => 4, 'post__not_in' => [$post->ID]]) as $souvenir):?>
+            <div class="souvenir-block">
+                <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>" class="souvenir-block-btn">Більше</a>
+                <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>">
+                    <img src="<?=get_the_post_thumbnail_url($souvenir->ID, [350,350])?>" alt="<?=$souvenir->post_name?>">
+                </a>
+            </div>
+		<?php endforeach;?>
     </div>
 </div>
 <?=get_footer()?>

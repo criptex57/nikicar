@@ -1,12 +1,12 @@
 <?php //Template Name: Допомога ?>
 <?=get_header()?>
 <div class="help-container">
-    <div class="help-title"><?=CFS()->get('help-page-title')?></div>
+    <h1 class="help-title"><?=CFS()->get('help-page-title')?></h1>
     <div class="help-about">
       <?=CFS()->get('help-page-desc')?>
     </div>
     <div class="help-content">
-        <?php foreach (get_posts( ['post_type' => 'help'] ) as $help){?>
+        <?php foreach (get_posts( ['post_type' => 'help', 'nopaging' => true] ) as $help){?>
             <?php if(get_the_post_thumbnail_url($help->ID)){?>
                 <div class="help-item">
                     <img src="<?=get_the_post_thumbnail_url($help->ID)?>" alt="">

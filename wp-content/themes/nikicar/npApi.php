@@ -16,6 +16,9 @@ elseif(isset($_GET['settlementsCity']) && $_GET['settlementsCity']){
 elseif(isset($_GET['warehouses']) && $_GET['warehouses']){
 	echo json_encode(json_decode($np->getWarehouses($_GET['warehouses'])), JSON_UNESCAPED_UNICODE);
 }
+else {
+	header("Location: /");
+}
 
 class NovaPoshta {
 	private $apiKey;

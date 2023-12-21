@@ -5,9 +5,9 @@
         echo '<li class="sim-slider-element"><img src="'.$image['slider_image'].'" alt="'.$key.'"></li>';
       }?>
   </ul>
-  <div class="sim-slider-text-block">
+  <h1 class="sim-slider-text-block">
     <b><?=CFS()->get('slider_text')?></b>
-  </div>
+  </h1>
 
   <div class="sim-slider-dots"></div>
   <div class="sim-slider-arrow-left"></div>
@@ -15,7 +15,7 @@
 </div>
 <div class="inquire">
   <div class="inquire-text">
-    <div class="inquire-text-title"><b><?=CFS()->get('inquire-text-title')?></b></div>
+    <h2 class="inquire-text-title"><b><?=CFS()->get('inquire-text-title')?></b></h2>
     <div class="inquire-text-cont"><?=CFS()->get('inquire-text-cont')?></div>
   </div>
   <div class="inquire-anim" id="anim-cont">
@@ -26,7 +26,7 @@
 </div>
 <div class="souvenir">
   <div class="souvenir-text">
-    <div class="souvenir-text-title"><b><?=CFS()->get('souvenir-text-title')?></b></div>
+    <h2 class="souvenir-text-title"><b><?=CFS()->get('souvenir-text-title')?></b></h2>
     <div class="souvenir-text-cont"><?=CFS()->get('souvenir-text-cont')?></div>
   </div>
   <div class="souvenir-images">
@@ -34,7 +34,7 @@
         <div class="souvenir-block">
             <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>" class="souvenir-block-btn">Більше</a>
             <a href="<?php echo '/'.$souvenir->post_type.'/'.$souvenir->post_name?>">
-                <img src="<?=get_the_post_thumbnail_url($souvenir->ID)?>" alt="">
+                <img src="<?=get_the_post_thumbnail_url($souvenir->ID, [350,350])?>" alt="<?=$souvenir->post_name?>">
             </a>
         </div>
     <?php endforeach;?>
@@ -45,16 +45,16 @@
     <div></div>
   </div>
   <div class="contacts-phone">
-    <div class="contacts-title"><b>КОНТАКТИ</b></div>
+    <h2 class="contacts-title"><b>КОНТАКТИ</b></h2>
     <div class="contacts-data">
       <div><i class="ico-phone"></i><span><?=CFS()->get('phone')?></span></div>
       <div><i class="ico-mail"></i><span><?=CFS()->get('email')?></span></div>
     </div>
   </div>
   <div class="contacts-icons">
-    <a href="<?=CFS()->get('telegram')?>"><i class="cont-ico ico-telegram"></i></a>
-    <a href="<?=CFS()->get('instagram')?>"><i class="cont-ico ico-instagram"></i></a>
-    <a href="<?=CFS()->get('facebook')?>"><i class="cont-ico ico-facebook"></i></a>
+    <a target="_blank" href="<?=CFS()->get('telegram')?>"><i class="cont-ico ico-telegram"></i></a>
+    <a target="_blank" href="<?=CFS()->get('facebook')?>"><i class="cont-ico ico-facebook"></i></a>
+    <!--<a target="_blank" href="<?=CFS()->get('instagram')?>"><i class="cont-ico ico-instagram"></i></a>-->
   </div>
 </div>
 <?=get_footer()?>

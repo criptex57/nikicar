@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Мурахи півдня</title>
-  <?php wp_head(); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<?=CFS()->get('meta-description')?CFS()->get('meta-description'):('Мурахи півдня - '.get_the_title())?>"/>
+    <meta name="keywords" content="мурахи півдня, niki car, nikicar, волонтерська організація, сувеніри, підтримка ЗСУ, благодійність, воєнні фонди, патріотичні товари, армійські сувеніри, благодійна діяльність, підтримка військових, національна безпека, товари для ЗСУ, військова тематика, українська армія, патріотизм, армійські товари, воєнна підтримка, воєнний фонд, армійська символіка, солідарність, сувеніри від волонтерів">
+    <title><?=get_the_title()?get_the_title().' - ':''?>Мурахи півдня</title>
+    <?php wp_head(); ?>
 </head>
 <body>
 <div id="lightbox">
@@ -18,6 +20,7 @@
     <div id="modal-header"></div>
     <div id="modal-body"></div>
 </div>
+<div class="main-container">
 <header id="header">
   <div class="logo" onclick="location.href='<?=get_home_url()?>';">
     <div></div>
@@ -28,3 +31,4 @@
     </div>
     <div class="close-burger close" id="burger"></div>
 </header>
+<main>

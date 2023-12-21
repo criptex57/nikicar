@@ -1,0 +1,90 @@
+.nikicar-order-container {
+    font-size: 20px;
+}
+
+.nikicar-order-container div {
+    margin: 7px;
+}
+
+.nikicar-order-item {
+    display: flex;
+}
+
+.nikicar-order-item-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nikicar-order-item-data > div > p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.nikicar-order-item-product-img img {
+    width: 200px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.nikicar-order-item-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-num {
+    margin: 0;
+    font-weight: bold;
+    color: #4c4c4c;
+}
+
+.nikicar-order-item-products-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #e3e3e3;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid #d4d4d4;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.nikicar-order-btn, .nikicar-order-btn:focus, .nikicar-order-btn:active {
+    background: #323232;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nikicar-order-btn:hover {
+    background: #535353;
+    color: white;
+}
+
+.w100 {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .nikicar-order-item, .nikicar-order-item-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nikicar-order-container div {
+        margin: 10px 0;
+    }
+
+    .nikicar-order-item-products-cont {
+        width: auto;
+    }
+
+    h2 > b {
+        line-height: 30px;
+    }
+}

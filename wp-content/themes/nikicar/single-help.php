@@ -23,23 +23,27 @@
             <?php if(get_the_post_thumbnail_url($post->ID)):?>
                 <li class="sim-slider-element"><img src="<?=get_the_post_thumbnail_url($post->ID)?>" alt="'.$key.'"></li>
             <?php endif;?>
-            <?php foreach(CFS()->get('help-single-images') as $key => $image):?>
-                <li class="sim-slider-element"><img src="<?=$image['help-single-image']?>" alt="'.$key.'"></li>
-            <?php endforeach;?>
+            <?php if(CFS()->get('help-single-images')):?>
+                <?php foreach(CFS()->get('help-single-images') as $key => $image):?>
+                    <li class="sim-slider-element"><img src="<?=$image['help-single-image']?>" alt="'.$key.'"></li>
+                <?php endforeach;?>
+            <?php endif;?>
         </ul>
         <div class="sim-slider-dots"></div>
         <div class="sim-slider-arrow-left"></div>
         <div class="sim-slider-arrow-right"></div>
     </div>
-    <div class="help-single-video-container">
-        <?php foreach(CFS()->get('help-single-video-block') as $key => $video):?>
-            <div class="help-single-video-div">
-                <h2><?=$video['help-single-video-title']?></h2>
-                <?=$video['help-single-video']?>
-            </div>
+    <?php if(CFS()->get('help-single-video-block')):?>
+        <div class="help-single-video-container">
+            <?php foreach(CFS()->get('help-single-video-block') as $key => $video):?>
+                <div class="help-single-video-div">
+                    <h2><?=$video['help-single-video-title']?></h2>
+                    <?=$video['help-single-video']?>
+                </div>
 
-        <?php endforeach;?>
-    </div>
+            <?php endforeach;?>
+        </div>
+    <?php endif;?>
 </div>
 
 <?=get_footer()?>

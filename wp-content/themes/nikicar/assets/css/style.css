@@ -86,6 +86,16 @@ Tags: niki-car.space/
     --font-5: 50px;
 }
 
+@media (max-width: 600px) {
+    :root {
+        --font-1: 15px;
+        --font-2: 20px;
+        --font-3: 25px;
+        --font-4: 30px;
+        --font-5: 35px;
+    }
+}
+
 h1, h2, h3, h4, p {
     margin: 0 0 10px 0;
 }
@@ -133,6 +143,7 @@ b {
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     overflow-y: scroll;
+    height: 100%;
 }
 
 body {
@@ -140,9 +151,20 @@ body {
     margin: 0;
     font-family: Montserrat;
     color: var(--color-white);
-    min-width: 400px;
+    min-width: 300px;
+    height: 100%;
 }
 
+.main-container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+    position: relative;
+}
 
 form {
     margin-top: 20px;
@@ -188,21 +210,18 @@ label {
 
 .error {
     background: var(--color-semi-dark);
-    min-height: calc(100vh - 120px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     text-align: center;
     color: var(--color-orange);
     font-weight: bold;
-    font-size: 17vw;
-    position: relative;
+    transform: translate(-50%, -50%);
 }
 
 .error > h1 {
-    margin: 0;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    font-size: 25vw;
 }
 
 /*************** LIGHTBOX start ***********************/
@@ -590,7 +609,7 @@ header > nav > ul > li > a {
     width: 100%;
     height: 25vw;
     border-radius: 300px;
-    background: url("../img/animation-background.png") no-repeat;
+    background: url("../img/animation-background.jpg") no-repeat;
     background-size: cover;
     display: flex;
 }
@@ -856,9 +875,9 @@ div.sim-slider-arrow-right {
 
 @media (max-width: 600px) {
     .sim-slider-text-block{
-        height: 8vw;
-        font-size: 3.5vw;
-        padding: 20px;
+        height: auto;
+        font-size: var(--font-3);
+        padding: 10px;
         width: 60vw;
     }
 }
@@ -897,7 +916,16 @@ div.sim-slider-arrow-right {
     margin: 10px;
     position: relative;
     width: 400px;
+}
 
+.souvenir-images.single > div {
+    margin: 10px;
+    position: relative;
+    width: 200px;
+}
+
+.souvenir-images.single {
+    margin: 0;
 }
 
 .souvenir-block-btn {
@@ -992,14 +1020,17 @@ div.sim-slider-arrow-right {
     padding: 50px 100px;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background: var(--color-dark);
+    background: url("../img/pech.png") var(--color-dark);
+    background-size: cover;
+    background-position: center;
 }
 
 .contacts-image {
-    background: url("../img/contacts_image.png") no-repeat;
+    background: url("../img/contacts_image.jpg") no-repeat;
     background-size: contain;
+    background-position: center;
     border-radius: 10px;
-    width: 277px;
+    width: auto;
     height: 428px;
     min-width: 250px;
     margin-right: 25px;
@@ -1101,7 +1132,6 @@ div.sim-slider-arrow-right {
 @media (max-width: 600px) {
     .contacts {
         padding: 15px 15px 25px 15px;
-        background: url("../img/pech.png") var(--color-dark);
         background-position: center;
         background-size: cover;
     }
@@ -1215,7 +1245,9 @@ footer {
     display: flex;
     padding: 30px 50px;
     background: var(--color-semi-dark);
+
 }
+
 
 .about-us-first-block-image > div {
     width: 573px;
@@ -1237,7 +1269,7 @@ footer {
     font-weight: bold;
 }
 
-.about-us-first-block-description > p {
+.about-us-first-block-description > h1 {
     font-size: var(--font-3);
     font-weight: bold;
     margin: 0 0 20px 0;
@@ -1272,7 +1304,7 @@ footer {
     font-size: var(--font-1);
 }
 
-.about-us-first-block-icons-text > div {
+.about-us-first-block-icons-text > h3 {
     font-weight: bold;
     font-size: var(--font-2);
 }
@@ -1306,7 +1338,7 @@ footer {
     margin: 15px 10px 10px 10px;
 }
 
-.about-us-members > p {
+.about-us-members > h2 {
     font-size: var(--font-3);
     font-weight: bold;
     margin: 0 0 5px 0;
@@ -1450,6 +1482,13 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    .help-item-text-container {
+        width: 60vw;
+        padding: 25px 15px;
+    }
+}
+
 /****************** СТОРІНКА HELP END ***************************************************************/
 /****************** СТОРІНКА help-single-container START ***************************************************************/
 .help-single-container > .sim-slider {
@@ -1558,15 +1597,14 @@ footer {
 }
 
 .report-head-title {
-    width: calc(1200px / 3);
-    padding: 10px;
+    width: calc(100% / 3);
     font-size: var(--font-3);
     font-weight: bold;
+    margin-right: 15px;
 }
 
 .report-head-desc {
-    width: calc(1200px / 3 * 2);
-    padding: 10px;
+    width: calc(100% / 3 * 2);
 }
 
 .report-content {
@@ -1615,6 +1653,7 @@ footer {
 .report-content-text {
     width: calc(1200px / 3);
     align-self: center;
+    text-align: center;
 }
 
 .report-content-text-title {
@@ -1626,11 +1665,19 @@ footer {
     color: var(--color-orange);
 }
 
-.report-content-loop, .report-head {
+.report-content-loop {
     margin: 20px 20px 40px 20px;
 }
 
-@media (max-width: 700px) {
+.report-head {
+    padding: 30px 50px;
+}
+
+@media (max-width: 1100px) {
+    .report-head {
+        padding: 10px 20px;
+    }
+
     .report-head, .report-content {
         flex-direction: column;
     }
@@ -1642,7 +1689,16 @@ footer {
 
     .report-move>.report-content-text {
         order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
         text-align: left;
+        margin-top: 10px;
+    }
+
+    .report-content-text-date {
+        margin-left: 15px;
     }
 
     .report-move>.report-content-image {
@@ -1734,6 +1790,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .souvenir-item {
@@ -1811,6 +1869,10 @@ footer {
     padding: 30px 50px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.souvenir-single-h2 {
+    margin: 30px 0 20px 0;
 }
 
 .souvenir-self-container {

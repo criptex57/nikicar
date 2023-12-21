@@ -1,19 +1,20 @@
 <?php //Template Name: Допомога ?>
 <?=get_header()?>
-<div class="report-container">
     <div class="report-head">
-        <div class="report-head-title">
-          <?= CFS()->get('report-page-title')?>
-        </div>
+        <h1 class="report-head-title">
+			<?= CFS()->get('report-page-title')?>
+        </h1>
         <div class="report-head-desc">
-          <?= CFS()->get('report-page-desc')?>
+			<?= CFS()->get('report-page-desc')?>
         </div>
     </div>
+<div class="report-container">
+
     <div class="report-content-loop">
       <?php $i = 0;?>
-      <?php foreach (get_posts( ['post_type' => 'report'] ) as $help):?>
+      <?php foreach (get_posts( ['post_type' => 'report', 'nopaging' => true] ) as $help):?>
           <div class="report-content <?=$i==0||$i==1?'report-move':''?>">
-              <div class="report-content-text" style="text-align: center">
+              <div class="report-content-text">
                 <div class="report-content-text-date"><?=date('d.m.y', strtotime($help->post_date))?></div>
                 <div class="report-content-text-title"><?=$help->post_title?></div>
               </div>

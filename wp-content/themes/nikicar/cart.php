@@ -1,8 +1,5 @@
 <?php //Template Name: Кошик ?>
 <?=get_header()?>
-<style>
-
-</style>
 <div class="cart-container">
     <div class="cart-title">ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</div>
     <div class="cart-body">
@@ -46,8 +43,6 @@
             <div class="cart-order" id="cart-order"></div>
             <a href="#" class="btn cart-approve-order" id="approve-order">Підтвердити замовлення</a>
         </div>
-
     </div>
-
 </div>
 <?=get_footer()?>
